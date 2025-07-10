@@ -4,61 +4,61 @@ const authorsData = {
     {
       "id": "aaron_mueller",
       "name": "Aaron Mueller",
-      "url": "",
+      "url": "https://aaronmueller.github.io",
       "isMe": false
     },
     {
       "id": "aaron_t_kirtland",
       "name": "Aaron T. Kirtland",
-      "url": "",
+      "url": "https://atkirtland.github.io/",
       "isMe": false
     },
     {
       "id": "adel_bibi",
       "name": "Adel Bibi",
-      "url": "",
+      "url": "https://www.adelbibi.com/",
       "isMe": false
     },
     {
       "id": "aditya_joshi",
       "name": "Aditya Joshi",
-      "url": "",
+      "url": "https://www.aditya-joshi.com/",
       "isMe": false
     },
     {
       "id": "alexander_lyzhov",
       "name": "Alexander Lyzhov",
-      "url": "",
+      "url": "https://scholar.google.com/citations?user=5LXTi40AAAAJ&hl=en",
       "isMe": false
     },
     {
       "id": "alexis_ross",
       "name": "Alexis Ross",
-      "url": "",
+      "url": "https://alexisjihyeross.github.io/",
       "isMe": false
     },
     {
       "id": "alicia_parrish",
       "name": "Alicia Parrish",
-      "url": "",
+      "url": "https://aliciaparrish.com/",
       "isMe": false
     },
     {
       "id": "alisa_liu",
       "name": "Alisa Liu",
-      "url": "",
+      "url": "https://alisawuffles.github.io/",
       "isMe": false
     },
     {
       "id": "amartya_sanyal",
       "name": "Amartya Sanyal",
-      "url": "",
+      "url": "https://amartya18x.github.io/",
       "isMe": false
     },
     {
       "id": "ameya_prabhu",
       "name": "Ameya Prabhu",
-      "url": "https://drimpossible.github.io/",
+      "url": "https://prabhu-ameya.github.io/",
       "isMe": true
     },
     {
@@ -70,25 +70,25 @@ const authorsData = {
     {
       "id": "anoop_namboodiri",
       "name": "Anoop Namboodiri",
-      "url": "",
+      "url": "https://scholar.google.com/citations?user=mpI3sbYAAAAJ&hl=en",
       "isMe": false
     },
     {
       "id": "aurobindo_munagala",
       "name": "Aurobindo Munagala",
-      "url": "",
+      "url": "https://www.linkedin.com/in/sri-aurobindo-munagala-b938a1151?originalSubdomain=in",
       "isMe": false
     },
     {
       "id": "bernard_ghanem",
       "name": "Bernard Ghanem",
-      "url": "",
+      "url": "https://www.bernardghanem.com/",
       "isMe": false
     },
     {
       "id": "charles_dognin",
       "name": "Charles Dognin",
-      "url": "",
+      "url": "https://www.linkedin.com/in/charlesdognin",
       "isMe": false
     },
     {
@@ -124,7 +124,7 @@ const authorsData = {
     {
       "id": "girish_varma",
       "name": "Girish Varma",
-      "url": "",
+      "url": "https://girishvarma.in/",
       "isMe": false
     },
     {
@@ -148,31 +148,31 @@ const authorsData = {
     {
       "id": "koustav_ghosal",
       "name": "Koustav Ghosal",
-      "url": "",
+      "url": "https://www.linkedin.com/in/koustav-ghosal-65a24624?originalSubdomain=ie",
       "isMe": false
     },
     {
       "id": "kumail_alhamoud",
       "name": "Kumail Alhamoud",
-      "url": "",
+      "url": "https://kumailalhamoud.netlify.app/",
       "isMe": false
     },
     {
       "id": "manish_shrivastava",
       "name": "Manish Shrivastava",
-      "url": "",
+      "url": "https://www.iiit.ac.in/faculty/manish-shrivastava/",
       "isMe": false
     },
     {
       "id": "maneesh_singh",
       "name": "Maneesh Singh",
-      "url": "",
+      "url": "https://www.linkedin.com/in/maneesh-singh-3523ab9",
       "isMe": false
     },
     {
       "id": "matthias_bethge",
       "name": "Matthias Bethge",
-      "url": "",
+      "url": "https://bethgelab.org/",
       "isMe": false
     },
     {
@@ -190,7 +190,7 @@ const authorsData = {
     {
       "id": "motasem_alfarra",
       "name": "Motasem Alfarra",
-      "url": "",
+      "url": "https://motasemalfarra.netlify.app/",
       "isMe": false
     },
     {
@@ -202,25 +202,25 @@ const authorsData = {
     {
       "id": "ozan_sener",
       "name": "Ozan Sener",
-      "url": "",
+      "url": "https://ozansener.net/",
       "isMe": false
     },
     {
       "id": "philip_torr",
       "name": "Philip Torr",
-      "url": "",
+      "url": "https://torrvision.com/",
       "isMe": false
     },
     {
       "id": "ponnurangam_kumaraguru",
       "name": "Ponnurangam Kumaraguru",
-      "url": "",
+      "url": "https://www.linkedin.com/in/ponguru?originalSubdomain=in",
       "isMe": false
     },
     {
       "id": "puneet_dokania",
       "name": "Puneet Dokania",
-      "url": "",
+      "url": "https://puneetkdokania.github.io/",
       "isMe": false
     },
     {
@@ -232,43 +232,43 @@ const authorsData = {
     {
       "id": "riddhiman_dasgupta",
       "name": "Riddhiman Dasgupta",
-      "url": "",
+      "url": "https://dasguptar.github.io/",
       "isMe": false
     },
     {
       "id": "rohit_gajawada",
       "name": "Rohit Gajawada",
-      "url": "",
+      "url": "https://www.linkedin.com/in/rohit-gajawada-68747a134",
       "isMe": false
     },
     {
       "id": "samuel_albanie",
       "name": "Samuel Albanie",
-      "url": "",
+      "url": "https://samuelalbanie.com/",
       "isMe": false
     },
     {
       "id": "samuel_bowman",
       "name": "Samuel Bowman",
-      "url": "",
+      "url": "https://sleepinyourhat.github.io/",
       "isMe": false
     },
     {
       "id": "shan_shivan_sinha",
       "name": "Shiven Sinha",
-      "url": "",
+      "url": "https://www.linkedin.com/in/shiven-sinha?originalSubdomain=in",
       "isMe": false
     },
     {
       "id": "shashwat_goel",
       "name": "Shashwat Goel",
-      "url": "",
+      "url": "https://shash42.github.io/",
       "isMe": false
     },
     {
       "id": "shyamgopal_karthik",
       "name": "Shyamgopal Karthik",
-      "url": "",
+      "url": "https://sgk98.github.io/",
       "isMe": false
     },
     {

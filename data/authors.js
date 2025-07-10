@@ -254,7 +254,7 @@ const authorsData = {
       "isMe": false
     },
     {
-      "id": "shan_shivan_sinha",
+      "id": "shivan_sinha",
       "name": "Shiven Sinha",
       "url": "https://www.linkedin.com/in/shiven-sinha?originalSubdomain=in",
       "isMe": false
@@ -286,7 +286,7 @@ const authorsData = {
     {
       "id": "SriAurobindo_munagala",
       "name": "Sri Aurobindo Munagala",
-      "url": "",
+      "url": "https://www.linkedin.com/in/sri-aurobindo-munagala-b938a1151?originalSubdomain=in",
       "isMe": false
     },
     {
@@ -298,31 +298,31 @@ const authorsData = {
     {
       "id": "tomasz_korbak",
       "name": "Tomasz Korbak",
-      "url": "",
+      "url": "https://tomekkorbak.com/",
       "isMe": false
     },
     {
       "id": "vasudeva_varma",
       "name": "Vasudeva Varma",
-      "url": "",
+      "url": "https://irel.iiit.ac.in/vasu/index.html",
       "isMe": false
     },
     {
       "id": "vishaal_udandarao",
       "name": "Vishaal Udandarao",
-      "url": "",
+      "url": "https://vishaal27.github.io/",
       "isMe": false
     },
     {
       "id": "vishal_batchu",
       "name": "Vishal Batchu",
-      "url": "",
+      "url": "https://www.linkedin.com/in/vishal-batchu-770849113?originalSubdomain=in",
       "isMe": false
     },
     {
       "id": "vladlen_koltun",
       "name": "Vladlen Koltun",
-      "url": "",
+      "url": "https://vladlen.info/",
       "isMe": false
     },
     {
@@ -334,7 +334,7 @@ const authorsData = {
     {
       "id": "yasir_ghunaim",
       "name": "Yasir Ghunaim",
-      "url": "",
+      "url": "https://www.linkedin.com/in/yasir-ghunaim",
       "isMe": false
     },
     {

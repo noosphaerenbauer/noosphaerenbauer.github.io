@@ -1,6 +1,5 @@
 // Publications data in JSON format
 const publicationsData = [
-  [
   {
     "id": "fazl2025unlearning",
     "title": "Open Problems in Machine Unlearning for AI Safety",

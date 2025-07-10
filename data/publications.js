@@ -111,7 +111,7 @@ const publicationsData = [
     "authors": [
       "long_phan",
       "alice_gatti",
-      "other_authors",
+      "more_authors",
       "ameya_prabhu",
       "other_authors",
       "summer_yue", 
@@ -171,7 +171,7 @@ const publicationsData = [
       "tim_fist", 
       "luke_ong",
       "philip_torr"
-      "kwok-yan_lam", 
+      "kwok_yan_lam", 
       "robert_trager", 
       "david_krueger", 
       "soren_mindermann", 

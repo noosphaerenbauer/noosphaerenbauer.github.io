@@ -47,9 +47,10 @@ const publicationsData = [
     "authors": [
       "shiven_sinha",
       "shashwat_goel",
-      "ameya_prabhu",
-      "matthias_bethge",
-      "jonas_geiping"
+      "ponnurangam_kumaraguru",
+      "jonas_geiping",
+       "matthias_bethge",
+       "ameya_prabhu"
     ],
     "venue": "COLM",
     "year": "2025",
@@ -80,13 +81,15 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
- 
    {
     "id": "shashwat2025oversight",
     "title": "Great Models Think Alike and this Undermines AI Oversight",
     "authors": [
       "shashwat_goel",
       "joschka_struber",
+      "ilze_auzina",
+      "karuna_chandra",
+      ""ponnurangam_kumaraguru
       "ameya_prabhu",
       "matthias_bethge"
     ],

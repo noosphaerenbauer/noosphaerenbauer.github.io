@@ -4,8 +4,8 @@ const publicationsData = [
     "id": "chandak2025answermatch",
     "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
     "authors": [
-      "nikunj_chandak",
-      "shashwat_goel",
+      "nikhil_chandak*",
+      "shashwat_goel*",
       "ameya_prabhu",
       "moritz_hardt",
       "jonas_geiping"

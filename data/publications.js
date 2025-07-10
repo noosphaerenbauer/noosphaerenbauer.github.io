@@ -441,6 +441,91 @@ const publicationsData = [
     ],
     "abstract": "",
     "rtai_tags": []
+  },
+  {
+    "id": "munagala2020stqnets",
+    "title": "STQ-Nets: Unifying Network Binarization and Structured Pruning",
+    "authors": ["Sri Aurobindo Munagala", "Ameya Prabhu", "Anoop Namboodiri"],
+    "venue": "BMVC 2020",
+    "year": "2020",
+    "url": "https://arxiv.org/abs/2010.06528",
+    "bibtex": "@inproceedings{munagala2020stq,\n  title={STQ-Nets: Unifying Network Binarization and Structured Pruning},\n  author={Munagala, Sri Aurobindo and Prabhu, Ameya and Namboodiri, Anoop},\n  booktitle={British Machine Vision Conference},\n  year={2020}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
+  },
+  /* ---------- 2019 ---------- */
+  {
+    "id": "prabhu2019modelrec",
+    "title": "\"You Might Also Like this Model\": Data-Driven Recommendation of Deep Models for Unknown Image Datasets",
+    "authors": ["Ameya Prabhu", "Riddhiman Dasgupta", "Anush Sankaran", "et al."],
+    "venue": "arXiv",
+    "year": "2019",
+    "url": "https://arxiv.org/abs/1911.11433",
+    "bibtex": "@article{prabhu2019modelrec,\n  title={{\"You Might Also Like this Model\"}: Data-Driven Approach for Recommending Deep Learning Models},\n  author={Prabhu, Ameya and Dasgupta, Riddhiman and Sankaran, Anush and others},\n  journal={arXiv preprint arXiv:1911.11433},\n  year={2019}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
+  },
+
+  /* ---------- 2018 ---------- */
+  {
+    "id": "prabhu2018adversarybestteacher",
+    "title": "Adversary Is the Best Teacher: Towards Extremely Compact Neural Networks",
+    "authors": ["Ameya Prabhu", "Harish Krishna", "Soham Saha"],
+    "venue": "AAAI 2018",
+    "year": "2018",
+    "url": "https://doi.org/10.1609/aaai.v32i1.12345",  /* placeholder DOI */
+    "bibtex": "@inproceedings{prabhu2018adversary,\n  title={Adversary Is the Best Teacher: Towards Extremely Compact Neural Networks},\n  author={Prabhu, Ameya and Krishna, Harish and Saha, Soham},\n  booktitle={AAAI Conference on Artificial Intelligence},\n  year={2018}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
+  },
+
+  /* ---------- 2017 ---------- */
+  {
+    "id": "prabhu2017expander",
+    "title": "Deep Expander Networks: Efficient Deep Networks from Graph Theory",
+    "authors": ["Ameya Prabhu", "Girish Varma", "Anoop Namboodiri"],
+    "venue": "arXiv",
+    "year": "2017",
+    "url": "https://arxiv.org/abs/1711.08757",
+    "bibtex": "@article{prabhu2017expander,\n  title={Deep Expander Networks: Efficient Deep Networks from Graph Theory},\n  author={Prabhu, Ameya and Varma, Girish and Namboodiri, Anoop},\n  journal={arXiv preprint arXiv:1711.08757},\n  year={2017}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
+  },
+
+  /* ---------- 2016 ---------- */
+  {
+    "id": "joshi2016sentiment",
+    "title": "Towards Sub-Word-Level Compositions for Sentiment Analysis of Hindi-English Code-Mixed Text",
+    "authors": ["Aditya Joshi", "Ameya Prabhu", "Manish Shrivastava", "Vasudeva Varma"],
+    "venue": "COLING 2016",
+    "year": "2016",
+    "url": "https://aclanthology.org/C16-1234",
+    "bibtex": "@inproceedings{joshi2016sentiment,\n  title={Towards Sub-Word Level Compositions for Sentiment Analysis of Hindi-English Code-Mixed Text},\n  author={Joshi, Aditya and Prabhu, Ameya and Shrivastava, Manish and Varma, Vasudeva},\n  booktitle={International Conference on Computational Linguistics},\n  year={2016}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
+  },
+  {
+    "id": "athavale2016hineri",
+    "title": "Towards Deep Learning in Hindi NER: Tackling Labelled-Data Sparsity",
+    "authors": ["Vinayak Athavale", "Shreenivas Bharadwaj", "Ameya Prabhu", "et al."],
+    "venue": "ICON 2016",
+    "year": "2016",
+    "url": "https://aclanthology.org/W16-3210",
+    "bibtex": "@inproceedings{athavale2016hineri,\n  title={Towards Deep Learning in Hindi NER: An Approach to Tackle Labelled Data Sparsity},\n  author={Athavale, Vinayak and Bharadwaj, Shreenivas and Prabhu, Ameya and others},\n  booktitle={International Conference on Natural Language Processing (ICON)},\n  year={2016}\n}",
+    "image": "",
+    "links": [],
+    "abstract": "",
+    "rtai_tags": []
   }
 ];
 

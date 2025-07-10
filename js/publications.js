@@ -6,16 +6,8 @@ async function renderPublication(publication) {
     `<span style="background-color:${getTagColor(tag)}">${tag}</span>`
   ).join('\n');
   
-  // Render RTAITags if they exist
-  let rtaiTagsHTML = '';
-  if (publication.rtai_tags) {
-    const rtaiTags = await Promise.all(publication.rtai_tags.map(tag => htmlCommunityTag(tag)));
-    rtaiTagsHTML = rtaiTags.join('\n');
-  }
-  
-  // Combine regular tags and RTAI tags
-  const allTagsHTML = tagsHTML + (rtaiTagsHTML ? '\n' + rtaiTagsHTML : '');
-  
+
+
   // Create author lookup map if it doesn't exist
   if (!window.authorLookup) {
     window.authorLookup = new Map();

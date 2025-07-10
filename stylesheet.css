@@ -349,6 +349,35 @@ span.highlight {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+.social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+        margin-bottom: 1em;
+      }
+      
+      .social-links a {
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s, transform 0.2s;
+        font-weight: 500;
+      }
+      
+      .social-links a i {
+        font-size: 1.3em;
+        margin-right: 0.4em;
+        vertical-align: middle;
+      }
+      
+      .social-links a:hover, .social-links a:focus {
+        color: var(--link-hover);
+        transform: translateY(-2px) scale(1.07);
+      }
+
 .theme-switch {
   display: inline-block;
   height: 24px;

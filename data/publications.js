@@ -1,23 +1,100 @@
 // Publications data in JSON format
 const publicationsData = [
-  {
-    "id": "fazl2025unlearning",
-    "title": "Open Problems in Machine Unlearning for AI Safety",
+   {
+    "id": "chandak2025answermatch",
+    "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
     "authors": [
-      "fazl_barez",
-      "tingchen_fu",
+      "nikunj_chandak",
+      "shashwat_goel",
       "ameya_prabhu",
-      "stephen_casper",
-      "amartya_sanyal",
-      "adel_bibi",
-      "philip_torr"
+      "moritz_hardt",
+      "jonas_geiping"
     ],
     "venue": "arXiv",
     "year": "2025",
-    "url": "https://arxiv.org/abs/2501.04952",
+    "url": "https://arxiv.org/abs/2507.02856",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2501.04952" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2507.02856" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  },
+  {
+    "id": "hochlehnert2025sober",
+    "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+    "authors": [
+      "andreas_hochlehnert",
+      "hardik_bhatnagar",
+      "vishaal_udandarao",
+      "ameya_prabhu",
+      "matthias_bethge"
+    ],
+    "venue": "arXiv",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2504.07086",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07086" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  },
+   {
+    "id": "sinha2025falsify",
+    "title": "Can Language Models Falsify? Evaluating Algorithmic Reasoning with Counterexample Creation",
+    "authors": [
+      "shiven_sinha",
+      "shashwat_goel",
+      "ameya_prabhu",
+      "matthias_bethge",
+      "jonas_geiping"
+    ],
+    "venue": "arXiv",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2502.19414",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.19414" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  },
+  {
+    "id": "rubinstein2025ocl",
+    "title": "Are We Done with Object-Centric Learning?",
+    "authors": [
+      "alexander_rubinstein",
+      "ameya_prabhu",
+      "matthias_bethge",
+      "seong_joon_oh"
+    ],
+    "venue": "arXiv",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2504.07092",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07092" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  },
+ 
+   {
+    "id": "shashwat2025oversight",
+    "title": "Great Models Think Alike and this Undermines AI Oversight",
+    "authors": [
+      "shashwat_goel",
+      "joschka_struber",
+      "ameya_prabhu",
+      "matthias_bethge"
+    ],
+    "venue": "arXiv",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2502.04313",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.04313" }
     ],
     "abstract": "",
     "rtai_tags": []
@@ -38,45 +115,6 @@ const publicationsData = [
     "bibtex": "",
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2501.14249" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "shashwat2025oversight",
-    "title": "Great Models Think Alike and this Undermines AI Oversight",
-    "authors": [
-      "shashwat_goel",
-      "joschka_struber",
-      "ameya_prabhu",
-      "matthias_bethge"
-    ],
-    "venue": "arXiv",
-    "year": "2025",
-    "url": "https://arxiv.org/abs/2502.04313",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.04313" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "thaddaeus2025clipfreq",
-    "title": "Pretraining Frequency Predicts Compositional Generalization of CLIP on Real-World Tasks",
-    "authors": [
-      "thaddaeus_wiedemer",
-      "yash_sharma",
-      "ameya_prabhu",
-      "matthias_bethge",
-      "wieland_brendel"
-    ],
-    "venue": "arXiv",
-    "year": "2025",
-    "url": "https://arxiv.org/abs/2502.18326",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.18326" }
     ],
     "abstract": "",
     "rtai_tags": []
@@ -103,80 +141,64 @@ const publicationsData = [
     "rtai_tags": []
   },
   {
-    "id": "sinha2025falsify",
-    "title": "Can Language Models Falsify? Evaluating Algorithmic Reasoning with Counterexample Creation",
+    "id": "fazl2025unlearning",
+    "title": "Open Problems in Machine Unlearning for AI Safety",
     "authors": [
-      "shiven_sinha",
-      "shashwat_goel",
+      "fazl_barez",
+      "tingchen_fu",
       "ameya_prabhu",
-      "matthias_bethge",
-      "jonas_geiping"
+      "stephen_casper",
+      "amartya_sanyal",
+      "adel_bibi",
+      "philip_torr"
     ],
     "venue": "arXiv",
     "year": "2025",
-    "url": "https://arxiv.org/abs/2502.19414",
+    "url": "https://arxiv.org/abs/2501.04952",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.19414" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2501.04952" }
     ],
     "abstract": "",
     "rtai_tags": []
   },
   {
-    "id": "hochlehnert2025sober",
-    "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+    "id": "thaddaeus2025clipfreq",
+    "title": "Pretraining Frequency Predicts Compositional Generalization of CLIP on Real-World Tasks",
     "authors": [
-      "andreas_hochlehnert",
-      "hardik_bhatnagar",
-      "vishaal_udandarao",
+      "thaddaeus_wiedemer",
+      "yash_sharma",
       "ameya_prabhu",
+      "matthias_bethge",
+      "wieland_brendel"
+    ],
+    "venue": "arXiv",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2502.18326",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2502.18326" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  },
+  {
+    "id": "press2024citeme",
+    "title": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+    "authors": [
+      "ori_press",
+      "andreas_hochlehnert",
+      "ameya_prabhu",
+      "vishaal_udandarao",
+      "ofir_press",
       "matthias_bethge"
     ],
     "venue": "arXiv",
-    "year": "2025",
-    "url": "https://arxiv.org/abs/2504.07086",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2407.12861",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07086" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "rubinstein2025ocl",
-    "title": "Are We Done with Object-Centric Learning?",
-    "authors": [
-      "alexander_rubinstein",
-      "ameya_prabhu",
-      "matthias_bethge",
-      "seong_joon_oh"
-    ],
-    "venue": "arXiv",
-    "year": "2025",
-    "url": "https://arxiv.org/abs/2504.07092",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07092" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "chandak2025answermatch",
-    "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
-    "authors": [
-      "nikunj_chandak",
-      "shashwat_goel",
-      "ameya_prabhu",
-      "moritz_hardt",
-      "jonas_geiping"
-    ],
-    "venue": "arXiv",
-    "year": "2025",
-    "url": "https://arxiv.org/abs/2507.02856",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2507.02856" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2407.12861" }
     ],
     "abstract": "",
     "rtai_tags": []
@@ -198,27 +220,6 @@ const publicationsData = [
     "bibtex": "",
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2402.08823" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "prabhu2024lifelong",
-    "title": "Lifelong Benchmarks: Efficient Model Evaluation in an Era of Rapid Progress",
-    "authors": [
-      "ameya_prabhu",
-      "vishaal_udandarao",
-      "philip_torr",
-      "matthias_bethge",
-      "adel_bibi",
-      "samuel_albanie"
-    ],
-    "venue": "arXiv",
-    "year": "2024",
-    "url": "https://arxiv.org/abs/2402.19472",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.19472" }
     ],
     "abstract": "",
     "rtai_tags": []
@@ -267,6 +268,27 @@ const publicationsData = [
     "rtai_tags": []
   },
   {
+    "id": "prabhu2024lifelong",
+    "title": "Lifelong Benchmarks: Efficient Model Evaluation in an Era of Rapid Progress",
+    "authors": [
+      "ameya_prabhu",
+      "vishaal_udandarao",
+      "philip_torr",
+      "matthias_bethge",
+      "adel_bibi",
+      "samuel_albanie"
+    ],
+    "venue": "arXiv",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2402.19472",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.19472" }
+    ],
+    "abstract": "",
+    "rtai_tags": []
+  }, 
+  {
     "id": "gui2024knnclip",
     "title": "kNN-CLIP: Retrieval Enables Training-Free Segmentation on Continually Expanding Large Vocabularies",
     "authors": [
@@ -289,27 +311,7 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
-  {
-    "id": "press2024citeme",
-    "title": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
-    "authors": [
-      "ori_press",
-      "andreas_hochlehnert",
-      "ameya_prabhu",
-      "vishaal_udandarao",
-      "ofir_press",
-      "matthias_bethge"
-    ],
-    "venue": "arXiv",
-    "year": "2024",
-    "url": "https://arxiv.org/abs/2407.12861",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2407.12861" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
-  },
+  
   {
     "id": "goel2024corrective",
     "title": "Corrective Machine Unlearning",

@@ -89,9 +89,11 @@ const publicationsData = [
       "joschka_struber",
       "ilze_auzina",
       "karuna_chandra",
-      ""ponnurangam_kumaraguru
+      "ponnurangam_kumaraguru",
+      "douwe_kiela",
       "ameya_prabhu",
-      "matthias_bethge"
+      "matthias_bethge",
+      "jonas_geiping"
     ],
     "venue": "ICML",
     "year": "2025",
@@ -109,9 +111,12 @@ const publicationsData = [
     "authors": [
       "long_phan",
       "alice_gatti",
+      "other_authors",
       "ameya_prabhu",
-      "ziwen_han",
-      "nathaniel_li"
+      "other_authors",
+      "summer_yue", 
+      "alexandr_wang",
+      "dan_hendrycks"
     ],
     "venue": "arXiv",
     "year": "2025",
@@ -132,6 +137,12 @@ const publicationsData = [
       "ameya_prabhu",
       "tawsif_ahmed",
       "andreas_hochlehnert",
+      "huu_nguyen", 
+      "nick_akinci", 
+      "ludwig_schmidt", 
+      "robert_kaczmarczyk", 
+      "soren_auer",
+      "jenia_jitsev",
       "matthias_bethge"
     ],
     "venue": "arXiv",
@@ -154,7 +165,19 @@ const publicationsData = [
       "stephen_casper",
       "amartya_sanyal",
       "adel_bibi",
+      "aidan_ogara", 
+      "robert_kirk", 
+      "ben_bucknall", 
+      "tim_fist", 
+      "luke_ong",
       "philip_torr"
+      "kwok-yan_lam", 
+      "robert_trager", 
+      "david_krueger", 
+      "soren_mindermann", 
+      "jose_hernandez_orallo", 
+      "mor_geva", 
+      "yarin_gal"
     ],
     "venue": "arXiv",
     "year": "2025",
@@ -204,7 +227,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2407.12861" }
     ],
-    "abstract": "",
+    "abstract": "Releases CiteME, a benchmark that asks LLMs to recover the exact paper behind a quoted claim, revealing a wide gap between humans (~70 %) and foundation LLMs (~4–18 %). Shows that an autonomous agent (CiteAgent) that searches and reads papers can close much of that gap, setting a realistic path for automatic citation-checking. ",
     "rtai_tags": []
   },
   {

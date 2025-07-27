@@ -1,4 +1,3 @@
-// Publications data in JSON format
 const publicationsData = [
    {
     "id": "chandak2025answermatch",
@@ -170,7 +169,7 @@ const publicationsData = [
       "ben_bucknall", 
       "tim_fist", 
       "luke_ong",
-      "philip_torr"
+      "philip_torr",
       "kwok_yan_lam", 
       "robert_trager", 
       "david_krueger", 
@@ -484,7 +483,6 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
-  /* ---------- 2019 ---------- */
   {
     "id": "prabhu2019modelrec",
     "title": "\"You Might Also Like this Model\": Data-Driven Recommendation of Deep Models for Unknown Image Datasets",
@@ -498,8 +496,6 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
-
-  /* ---------- 2018 ---------- */
   {
     "id": "prabhu2018adversarybestteacher",
     "title": "Adversary Is the Best Teacher: Towards Extremely Compact Neural Networks",
@@ -513,8 +509,6 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
-
-  /* ---------- 2017 ---------- */
   {
     "id": "prabhu2017expander",
     "title": "Deep Expander Networks: Efficient Deep Networks from Graph Theory",
@@ -528,8 +522,6 @@ const publicationsData = [
     "abstract": "",
     "rtai_tags": []
   },
-
-  /* ---------- 2016 ---------- */
   {
     "id": "joshi2016sentiment",
     "title": "Towards Sub-Word-Level Compositions for Sentiment Analysis of Hindi-English Code-Mixed Text",

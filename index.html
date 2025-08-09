@@ -52,14 +52,14 @@
   }
   </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="pictures/photo.png">
   <script src="data/publications.js"></script>
   <script src="data/authors.js"></script>
-  <script src="data/communities.js"></script>
   <script src="js/publications.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="js/visualizations.js"></script>
 
 </head>
 
@@ -80,7 +80,7 @@
         <div class="col-sm-4 name-column" style="min-width: 266px;">
           <p style="text-align:center">
             <name>Ameya Prabhu</name><br/>
-            <small>Seizing the means of prediction (robustly)!</small>
+            <small class="tagline">Seizing the means of prediction (robustly)!</small>
           </p>
         </div>
         <div class="col-sm-8 name-column text-right" style="min-width: 266px;">
@@ -92,66 +92,49 @@
           </p>
         </div>
       </div>
-      <div class="row common-rows">
-
-        <div class="col-xs-12 col-sm-8 personal-column">
-          <p>I am a professor at the <a href="https://tuebingen.ai/">University of Tübingen</a> leading the group on <a href="https://scalabletrustworthyai.github.io/">Scalable Trustworthy AI (STAI)</a>.
-            In addition to my main job, I advise <a href="https://www.parameterlab.de/">Parameter Lab</a>.
-            I am generally interested in training reliable models (<emph>e.g.</emph> explainable, robust, and probabilistic models) and obtaining the necessary human supervision and guidance in a cost-effective way.
-          </p>
-          <p>
-            I have been a research scientist at <a href="https://github.com/naver-ai">NAVER AI Lab</a> for 3.5 years.
-            I received my PhD in computer vision and machine learning at <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max-Planck Institute for Informatics</a> in 2018,
-            under the supervision of <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele">Bernt Schiele</a> and <a href="https://cispa.saarland/group/fritz/">Mario Fritz</a>,
-            with a focus on the privacy and security implications of CV and ML (<a href="https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/27146">Thesis</a>).
-            I received the Master of Mathematics with <a href="https://en.wikipedia.org/wiki/Part_III_of_the_Mathematical_Tripos">Distinction</a> in 2014 and
-            Bachelor of Arts in Mathematics as a <a href="https://en.wikipedia.org/wiki/Wrangler_(University_of_Cambridge)">Wrangler</a> in 2013,
-            both at University of Cambridge.
-          </p>
-          <p>
-            I started compiling the <a href="https://github.com/coallaoh/Principles">principles for life and research &#127822;</a>.
-          </p>
-
-          <p style="text-align:center">
-            <a href="https://scholar.google.com/citations?user=0kK7sSAAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-            <a href="https://hypothesishacker.substack.com">Substack</a> &nbsp;/&nbsp;
-            <a href="https://www.linkedin.com/in/ameya-prabhu/">LinkedIn</a> &nbsp;/&nbsp;
-            <a href="https://twitter.com/AmyPrb/">Twitter</a> &nbsp;/&nbsp;
-            <a href="https://github.com/prabhu-ameya/">Github</a> &nbsp;/&nbsp;
-            <a href="mailto:ameya.prabhu@bethgelab.org">Email (Work)</a>&nbsp;/&nbsp;
-            <a href="mailto:ameya@prabhu.be">Email (General)</a>
-          </p>
-
-        </div>
-        <div class="col-xs-12 col-sm-4 personal-column">
+      <div class="row common-rows align-items-start">
+        <div class="col-12 col-sm-4 order-sm-2 personal-column image-column">
           <img alt="Photo of Ameya" src="pictures/photo.png" class="personal-photo">
         </div>
-      </div>
-    </div>
-
-<!--
-    <div class="container">
-      <div class="row section-heading-rows">
-        <h3>Research Communities</h3>
+        <div class="col-12 col-sm-8 order-sm-1 personal-column">
+            <p>I am a postdoctoral researcher at the <a href="https://bethgelab.org/people/" target="_blank" rel="noopener noreferrer">Bethge Lab</a> at the Tübingen AI Center. My goal is automated scientific discovery, with a focus on:</p>
+            <ol class="my-0" style="margin-left:0; padding-left:0; list-style-position: inside;">
+              <li>Scaling supervision with RL to reduce reliance on manual labeling</li>
+              <li>Data‑centric Research: Curating data for pretraining & post‑training (also scalable RL environments)</li>
+              <li>Science of benchmarking: Building scalable benchmarks and analyzing current evaluations to better measure progress.</li>
+            </ol>
+            <div class="social-icons">
+              <a href="https://scholar.google.com/citations?user=0kK7sSAAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar-square"></i></a>
+              <a href="https://hypothesishacker.substack.com" aria-label="Substack" target="_blank" rel="noopener noreferrer"><i class="bi bi-substack"></i></a>
+              <a href="https://www.linkedin.com/in/ameya-prabhu/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/AmyPrb/" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/prabhu-ameya/" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="pictures/CV.pdf" aria-label="CV" target="_blank" rel="noopener noreferrer"><i class="ai ai-cv"></i></a>
+              <a href="mailto:ameya.prabhu@bethgelab.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <canvas id="topicTrendsChart" style="width:100%; height:400px;"></canvas>
-        </div>
-      </div>
-      <div class="row mt-3 mb-4">
-        <div class="col-12">
-          <div class="d-flex justify-content-center mb-2">
-            <button id="selectAllCommunities" class="community-control-btn mr-2">Select All</button>
-            <button id="clearAllCommunities" class="community-control-btn">Clear All</button>
-          </div>
-          <div id="communityFilters" class="community-filters-container">
-            
-          </div>
+            <div class="collaboration-box">
+              <p>If you're a PhD student interested in collaborating or just want to chat, please <a href="#">fill this form</a>!</p>
+            </div>
+
+            <div class="mt-3 mb-3">
+              <p><strong>Values and research philosophy</strong></p>
+              <ul>
+              <li>Robust, empirical research: Results which just work in other contexts; avoiding toy setups and unscalable algorithms.</li>
+                <li>Simple, principled algorithms: Papers which provide clarity over trial-and-error, validated in real settings — not under the streetlight of convenience.</li>
+              <li>Design better incentives via mechanism design, so technology trends toward a fairer world without defaulting to gatekeepers.</li>
+              </ul>
+            </div>
+
+            <p>Outside of research, I am a techno DJ and am currently learning to shuffle. I advocate for <a href="https://80000hours.org/problem-profiles/factory-farming/" target="_blank" rel="noopener noreferrer">animal welfare</a>, open research culture (<a href="https://www.jmlr.org/statement.html" target="_blank" rel="noopener noreferrer">JMLR statement</a>, <a href="https://en.wikipedia.org/wiki/The_Cost_of_Knowledge" target="_blank" rel="noopener noreferrer">Cost of Knowledge</a>). I believe the underlying <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/" target="_blank" rel="noopener noreferrer">open source philosophy</a>, vital for maintaining non-extractive digital institutions (<a href="https://en.wikipedia.org/wiki/Why_Nations_Fail" target="_blank" rel="noopener noreferrer">inspiration</a>).</p>
         </div>
       </div>
     </div>
--->
+
+
     <div class="container">
       <div class="row section-heading-rows">
         <h3 id="publications-heading">Publications</h3>
@@ -163,28 +146,77 @@
     </div>
 
     <style>
-      .community-filters-container {
-        max-width: 900px;
-        margin: 0 auto;
-        overflow-y: visible;
+      :root {
+        --social-icon-color: #2196F3;
+        --social-icon-hover-color: #1976D2;
+        --box-bg-color: #f8f9fa;
+        --box-text-color: #212529;
+        --box-border-color: #dee2e6;
       }
-      .community-control-btn {
-        background-color: #555555;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 5px 15px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 0 5px;
+
+      [data-theme="dark"] {
+        --social-icon-color: #66bb6a;
+        --social-icon-hover-color: #81c784;
+        --box-bg-color: #343a40;
+        --box-text-color: #e9ecef;
+        --box-border-color: #495057;
       }
-      .community-control-btn:hover {
-        background-color: #333333;
+
+      .social-icons {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0;
       }
-      .community-toggle-table td {
-        line-height: 1.2;
+      .social-icons a {
+        color: var(--social-icon-color);
+        font-size: 2.025rem;
+        margin: 0 0.5rem;
+        transition: color 0.3s;
       }
-      
+      .social-icons a:hover {
+        color: var(--social-icon-hover-color);
+      }
+      .tagline {
+        font-size: 0.9em;
+      }
+      .personal-photo {
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 260px; /* was 162px: increase size on small screens */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .collaboration-box {
+        background-color: var(--box-bg-color);
+        color: var(--box-text-color);
+        border: 1px solid var(--box-border-color);
+        border-radius: .25rem;
+        padding: 1.25rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .collaboration-box p {
+        margin-bottom: 0;
+      }
+      @media (min-width: 576px) {
+        /* Make columns equal height and prevent overlap with logos */
+        .common-rows {
+          align-items: stretch !important;
+        }
+        .image-column {
+          display: flex;
+          align-items: center; /* center image vertically within column */
+        }
+        .image-column .personal-photo {
+          margin-top: 0; /* remove negative/extra offsets on larger screens */
+          width: 100%;
+          height: 100%; /* match height of adjacent text column */
+          max-width: none; /* remove small width cap on large screens */
+          max-height: none;
+          object-fit: contain; /* preserve aspect ratio */
+        }
+      }
       /* Hide logos in dark mode */
       [data-theme="dark"] .institute-logo {
         display: none;
@@ -207,14 +239,6 @@
           toggleSwitch.checked = false;
         }
         
-        // Update charts if they exist
-        if (typeof updateChartTheme === 'function') {
-          try {
-            updateChartTheme();
-          } catch (error) {
-            console.log('Chart update failed:', error);
-          }
-        }
       }
 
       // Check for saved user preference, if any

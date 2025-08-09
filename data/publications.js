@@ -1,5 +1,5 @@
 const publicationsData = [
-   {
+  {
     "id": "chandak2025answermatch",
     "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
     "authors": [
@@ -16,8 +16,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2507.02856" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "hochlehnert2025sober",
@@ -30,15 +29,14 @@ const publicationsData = [
       "ameya_prabhu",
       "matthias_bethge"
     ],
-    "venue": "COLM",
+    "venue": "arXiv",
     "year": "2025",
     "url": "https://arxiv.org/abs/2504.07086",
     "bibtex": "",
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07086" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
    {
     "id": "sinha2025falsify",
@@ -51,15 +49,14 @@ const publicationsData = [
        "matthias_bethge",
        "ameya_prabhu"
     ],
-    "venue": "COLM",
+    "venue": "arXiv",
     "year": "2025",
     "url": "https://arxiv.org/abs/2502.19414",
     "bibtex": "",
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2502.19414" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "rubinstein2025ocl",
@@ -75,10 +72,10 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2504.07092",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07092" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2504.07092" },
+      { "text": "Code", "url": "https://github.com/AlexanderRubinstein/OCCAM" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
    {
     "id": "shashwat2025oversight",
@@ -101,8 +98,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2502.04313" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "long2025exam",
@@ -110,9 +106,7 @@ const publicationsData = [
     "authors": [
       "long_phan",
       "alice_gatti",
-      "more_authors",
       "ameya_prabhu",
-      "other_authors",
       "summer_yue", 
       "alexandr_wang",
       "dan_hendrycks"
@@ -122,10 +116,10 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2501.14249",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2501.14249" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2501.14249" },
+      { "text": "Website", "url": "https://lastexam.ai/" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "schuhmann2025alexandria",
@@ -151,8 +145,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2502.19413" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "fazl2025unlearning",
@@ -185,8 +178,18 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2501.04952" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
+  },
+  {
+    "id": "mergemodels2025",
+    "title": "How to Merge Your Multimodal Models Over Time?",
+    "authors": ["s_dziadzio", "vishaal_udandarao", "karsten_roth", "ameya_prabhu", "z_akata", "samuel_albanie"],
+    "venue": "CVPR",
+    "year": "2025",
+    "url": "",
+    "bibtex": "",
+    "links": [],
+    "abstract": ""
   },
   {
     "id": "thaddaeus2025clipfreq",
@@ -205,8 +208,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2502.18326" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "press2024citeme",
@@ -226,12 +228,11 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2407.12861" }
     ],
-    "abstract": "Releases CiteME, a benchmark that asks LLMs to recover the exact paper behind a quoted claim, revealing a wide gap between humans (~70 %) and foundation LLMs (~4–18 %). Shows that an autonomous agent (CiteAgent) that searches and reads papers can close much of that gap, setting a realistic path for automatic citation-checking. ",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "prabhu2024randumb",
-    "title": "RanDumb: A Simple Approach that Questions the Efficacy of Continual Representation Learning",
+    "title": "RanDumb: Random Representations Outperform Online Continually Learned Representations",
     "authors": [
       "ameya_prabhu",
       "shiven_sinha",
@@ -245,10 +246,10 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2402.08823",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.08823" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.08823" },
+      { "text": "Code", "url": "https://github.com/drimpossible/C2C" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "udandarao2024zeroshot",
@@ -270,8 +271,7 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2404.04125" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "sinha2024wumethod",
@@ -290,12 +290,11 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2404.06405" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "prabhu2024lifelong",
-    "title": "Lifelong Benchmarks: Efficient Model Evaluation in an Era of Rapid Progress",
+    "title": "Efficient Lifelong Model Evaluation in an Era of Rapid Progress",
     "authors": [
       "ameya_prabhu",
       "vishaal_udandarao",
@@ -309,10 +308,12 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2402.19472",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.19472" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.19472" },
+      { "text": "Twitter", "url": "https://twitter.com/vishaal_urao/status/1768668454947586143" },
+      { "text": "NeurIPS", "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/874067cee9c98dc9b9980fa6ef70176a-Abstract-Conference.html" },
+      { "text": "PDF (NeurIPS)", "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/874067cee9c98dc9b9980fa6ef70176a-Paper-Conference.pdf" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   }, 
   {
     "id": "gui2024knnclip",
@@ -334,10 +335,30 @@ const publicationsData = [
     "links": [
       { "text": "arXiv", "url": "https://arxiv.org/abs/2404.09447" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
-  
+  {
+    "id": "pretrainingguide2024",
+    "title": "A Practitioner's Guide to Continual Multimodal Pretraining",
+    "authors": ["karsten_roth", "vishaal_udandarao", "sebastian_dziadzio", "ameya_prabhu", "mehdi_cherti", "o_vinyals"],
+    "venue": "NeurIPS",
+    "year": "2024",
+    "url": "",
+    "bibtex": "",
+    "links": [],
+    "abstract": ""
+  },
+  {
+    "id": "condareport2024",
+    "title": "Data Contamination Report from the 2024 CONDA Shared Task",
+    "authors": ["o_sainz", "i_garcia_ferrero", "a_jacovi", "ja_campos", "y_elazar", "e_agirre"],
+    "venue": "ACL Workshop",
+    "year": "2024",
+    "url": "https://aclanthology.org/2024.conda-1.1/",
+    "bibtex": "",
+    "links": [{ "text": "ACL", "url": "https://aclanthology.org/2024.conda-1.1/" }],
+    "abstract": ""
+  },
   {
     "id": "goel2024corrective",
     "title": "Corrective Machine Unlearning",
@@ -350,11 +371,13 @@ const publicationsData = [
     ],
     "venue": "TMLR",
     "year": "2024",
-    "url": "",
+    "url": "https://arxiv.org/abs/2402.14015",
     "bibtex": "",
-    "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2402.14015" },
+      { "text": "Twitter", "url": "https://twitter.com/ShashwatGoel7/status/1760911396034793831" }
+    ],
+    "abstract": ""
   },
   {
     "id": "prabhu2023noc",
@@ -368,14 +391,37 @@ const publicationsData = [
       "adel_bibi"
     ],
     "venue": "CoLLAs",
-    "year": "2023",
+    "year": "2024",
     "url": "https://arxiv.org/abs/2311.11293",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2311.11293" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2311.11293" },
+      { "text": "Twitter", "url": "https://twitter.com/hammh0a/status/1756602046629794170" },
+      { "text": "Blogpost", "url": "https://hammoudhasan.medium.com/paper-explained-from-categories-to-classifier-name-only-continual-learning-by-exploring-the-web-ad0db41020bf" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
+  },
+  {
+    "id": "hammoud2023rapidadaptation",
+    "title": "Rapid Adaptation in Online Continual Learning: Are We Evaluating It Right?",
+    "authors": [
+      "hasan_hammoud",
+      "ameya_prabhu",
+      "sernam_lim",
+      "bernard_ghanem",
+      "philip_torr",
+      "adel_bibi"
+    ],
+    "venue": "ICCV",
+    "year": "2023",
+    "url": "https://github.com/drimpossible/drimpossible.github.io/blob/41f547b991fc99d1f733df8ab8528aa552b74a1f/documents/EvalOCL.pdf",
+    "bibtex": "",
+    "links": [
+      { "text": "PDF", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/41f547b991fc99d1f733df8ab8528aa552b74a1f/documents/EvalOCL.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/EvalOCL" },
+      { "text": "Talk", "url": "https://www.youtube.com/watch?v=H8Cyh-7xltg" }
+    ],
+    "abstract": ""
   },
   {
     "id": "mckenzie2023inversescaling",
@@ -392,28 +438,13 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2306.09479",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2306.09479" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2306.09479" },
+      { "text": "OpenReview", "url": "https://openreview.net/forum?id=DwgRm72GQF" },
+      { "text": "Code", "url": "https://github.com/inverse-scaling/prize" },
+      { "text": "Twitter", "url": "https://twitter.com/EthanJPerez/status/1671222828518227968" },
+      { "text": "Blogpost", "url": "https://www.lesswrong.com/posts/eqxqgFxymP8hXDTt5/announcing-the-inverse-scaling-prize-usd250k-prize-pool" }
     ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "goel2022unlearning",
-    "title": "Evaluating Inexact Unlearning Requires Revisiting Forgetting",
-    "authors": [
-      "shashwat_goel",
-      "ameya_prabhu",
-      "ponnurangam_kumaraguru"
-    ],
-    "venue": "arXiv",
-    "year": "2022",
-    "url": "https://arxiv.org/abs/2201.06640",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2201.06640" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "karthik2021nocost",
@@ -429,28 +460,12 @@ const publicationsData = [
     "url": "https://arxiv.org/abs/2104.00795",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2104.00795" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2104.00795" },
+      { "text": "OpenReview", "url": "https://openreview.net/forum?id=193sEnKY1ij" },
+      { "text": "Code", "url": "https://github.com/sgk98/CRM-Better-Mistakes" },
+      { "text": "Talk & Slides", "url": "https://iclr.cc/virtual/2021/poster/3041" }
     ],
-    "abstract": "",
-    "rtai_tags": []
-  },
-  {
-    "id": "prabhu2020gdumb",
-    "title": "GDumb: A Simple Approach that Questions Our Progress in Continual Learning",
-    "authors": [
-      "ameya_prabhu",
-      "philip_torr",
-      "puneet_dokania"
-    ],
-    "venue": "ECCV (Oral)",
-    "year": "2020",
-    "url": "https://arxiv.org/abs/2006.02609",
-    "bibtex": "",
-    "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2006.02609" }
-    ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "karthik2020mot",
@@ -460,41 +475,95 @@ const publicationsData = [
       "ameya_prabhu",
       "vineet_gandhi"
     ],
-    "venue": "arXiv",
+    "venue": "ECCV",
     "year": "2020",
     "url": "https://arxiv.org/abs/2006.02609",
     "bibtex": "",
     "links": [
-      { "text": "arXiv", "url": "https://arxiv.org/abs/2006.02609" }
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2006.02609" },
+      { "text": "PDF", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/956e70127df5a42fdd3ccef91baa706aa9bc969d/documents/SimpleReID.pdf" },
+      { "text": "Code", "url": "https://github.com/sgk98/SimpleMOT" }
     ],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
+  },
+  {
+    "id": "prabhu2020gdumb",
+    "title": "GDumb: A Simple Approach for Extreme Forgetting",
+    "authors": [
+      "ameya_prabhu",
+      "puneet_dokania",
+      "Soham Saha"
+    ],
+    "venue": "arXiv",
+    "year": "2020",
+    "url": "https://www.robots.ox.ac.uk/~tvg/publications/2020/gdumb.pdf",
+    "bibtex": "",
+    "links": [
+      { "text": "PDF", "url": "https://www.robots.ox.ac.uk/~tvg/publications/2020/gdumb.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/GDumb" },
+      { "text": "Talk", "url": "https://www.youtube.com/watch?v=iHCy_9guZMI" },
+      { "text": "Teaser", "url": "https://www.youtube.com/watch?v=F37GNpRLUrM" },
+      { "text": "Slides", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/gdumb_slides.pdf" },
+      { "text": "Slides (V2)", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/gdumb_slides_improved.pdf" }
+    ],
+    "abstract": ""
   },
   {
     "id": "munagala2020stqnets",
-    "title": "STQ-Nets: Unifying Network Binarization and Structured Pruning",
-    "authors": ["Sri Aurobindo Munagala", "Ameya Prabhu", "Anoop Namboodiri"],
+    "title": "STQ-Nets: Efficient Task Transfer via Selective Task Querying",
+    "authors": [
+      "aurobindo_munagala",
+      "shyamgopal_karthik",
+      "ameya_prabhu",
+      "anoop_namboodiri"
+    ],
     "venue": "BMVC",
     "year": "2020",
-    "url": "https://arxiv.org/abs/2010.06528",
-    "bibtex": "@inproceedings{munagala2020stq,\n  title={STQ-Nets: Unifying Network Binarization and Structured Pruning},\n  author={Munagala, Sri Aurobindo and Prabhu, Ameya and Namboodiri, Anoop},\n  booktitle={British Machine Vision Conference},\n  year={2020}\n}",
-    "image": "",
-    "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "url": "https://arxiv.org/abs/2006.02609",
+    "bibtex": "",
+    "links": [
+      { "text": "PDF", "url": "https://www.bmvc2020-conference.com/assets/papers/0113.pdf" },
+      { "text": "Talk & Slides", "url": "https://www.bmvc2020-conference.com/conference/papers/paper_0113.html" }
+    ],
+    "abstract": ""
   },
   {
     "id": "prabhu2019modelrec",
     "title": "\"You Might Also Like this Model\": Data-Driven Recommendation of Deep Models for Unknown Image Datasets",
-    "authors": ["Ameya Prabhu", "Riddhiman Dasgupta", "Anush Sankaran", "et al."],
+    "authors": [
+      "Ameya Prabhu",
+      "Riddhiman Dasgupta",
+      "Anush Sankaran",
+      "Srikanth Tamilselvam",
+      "Senthil Mani"
+    ],
     "venue": "arXiv",
     "year": "2019",
     "url": "https://arxiv.org/abs/1911.11433",
-    "bibtex": "@article{prabhu2019modelrec,\n  title={{\"You Might Also Like this Model\"}: Data-Driven Approach for Recommending Deep Learning Models},\n  author={Prabhu, Ameya and Dasgupta, Riddhiman and Sankaran, Anush and others},\n  journal={arXiv preprint arXiv:1911.11433},\n  year={2019}\n}",
+    "bibtex": "",
     "image": "",
     "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
+  },
+  {
+    "id": "prabhu2019samplingbias",
+    "title": "Sampling Bias in Deep Active Classification: An Empirical Study",
+    "authors": [
+      "ameya_prabhu",
+      "charles_dognin",
+      "maneesh_singh"
+    ],
+    "venue": "EMNLP-IJCNLP",
+    "year": "2019",
+    "url": "https://aclanthology.org/D19-1417/",
+    "bibtex": "",
+    "links": [
+      { "text": "ACL", "url": "https://aclanthology.org/D19-1417/" },
+      { "text": "PDF", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/active_sampling_bias.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/Sampling-Bias-Active-Learning" },
+      { "text": "Poster", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/active_sampling_bias_poster.pdf" }
+    ],
+    "abstract": ""
   },
   {
     "id": "prabhu2018adversarybestteacher",
@@ -502,12 +571,11 @@ const publicationsData = [
     "authors": ["Ameya Prabhu", "Harish Krishna", "Soham Saha"],
     "venue": "AAAI (Student Abstract)",
     "year": "2018",
-    "url": "https://doi.org/10.1609/aaai.v32i1.12345",  /* placeholder DOI */
+    "url": "",
     "bibtex": "@inproceedings{prabhu2018adversary,\n  title={Adversary Is the Best Teacher: Towards Extremely Compact Neural Networks},\n  author={Prabhu, Ameya and Krishna, Harish and Saha, Soham},\n  booktitle={AAAI Conference on Artificial Intelligence},\n  year={2018}\n}",
     "image": "",
     "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "abstract": ""
   },
   {
     "id": "prabhu2017expander",
@@ -516,11 +584,17 @@ const publicationsData = [
     "venue": "ECCV (Oral)",
     "year": "2017",
     "url": "https://arxiv.org/abs/1711.08757",
-    "bibtex": "@article{prabhu2017expander,\n  title={Deep Expander Networks: Efficient Deep Networks from Graph Theory},\n  author={Prabhu, Ameya and Varma, Girish and Namboodiri, Anoop},\n  journal={arXiv preprint arXiv:1711.08757},\n  year={2017}\n}",
+    "bibtex": "",
     "image": "",
-    "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/1711.08757" },
+      { "text": "CVF", "url": "http://openaccess.thecvf.com/content_ECCV_2018/papers/Ameya_Prabhu_Deep_Expander_Networks_ECCV_2018_paper.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/Deep-Expander-Networks" },
+      { "text": "Talk", "url": "https://www.youtube.com/watch?v=0poGlFx1OBU" },
+      { "text": "Slides", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/expander_slides.pdf" },
+      { "text": "Poster", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/expander_poster.pdf" }
+    ],
+    "abstract": ""
   },
   {
     "id": "joshi2016sentiment",
@@ -529,25 +603,125 @@ const publicationsData = [
     "venue": "COLING",
     "year": "2016",
     "url": "https://aclanthology.org/C16-1234",
-    "bibtex": "@inproceedings{joshi2016sentiment,\n  title={Towards Sub-Word Level Compositions for Sentiment Analysis of Hindi-English Code-Mixed Text},\n  author={Joshi, Aditya and Prabhu, Ameya and Shrivastava, Manish and Varma, Vasudeva},\n  booktitle={International Conference on Computational Linguistics},\n  year={2016}\n}",
+    "bibtex": "",
     "image": "",
-    "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "links": [
+      { "text": "ACL", "url": "https://aclanthology.org/C16-1234" },
+      { "text": "Poster", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/subword_lstm_poster.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/Sub-word-LSTM/" }
+    ],
+    "abstract": ""
+  },
+  // New, clearly verifiable publications from the page
+  
+  {
+    "id": "munagala2022clactive",
+    "title": "CLActive: Episodic Memories for Rapid Active Learning",
+    "authors": [
+      "aurobindo_munagala",
+      "sidhant_subramanian",
+      "shyamgopal_karthik",
+      "ameya_prabhu",
+      "anoop_namboodiri"
+    ],
+    "venue": "CoLLAs",
+    "year": "2022",
+    "url": "https://proceedings.mlr.press/v199/munagala22a.html",
+    "bibtex": "",
+    "links": [
+      { "text": "PMLR", "url": "https://proceedings.mlr.press/v199/munagala22a.html" }
+    ],
+    "abstract": ""
   },
   {
-    "id": "athavale2016hineri",
-    "title": "Towards Deep Learning in Hindi NER: Tackling Labelled-Data Sparsity",
-    "authors": ["Vinayak Athavale", "Shreenivas Bharadwaj", "Ameya Prabhu", "et al."],
-    "venue": "ICON",
-    "year": "2016",
-    "url": "https://aclanthology.org/W16-3210",
-    "bibtex": "@inproceedings{athavale2016hineri,\n  title={Towards Deep Learning in Hindi NER: An Approach to Tackle Labelled Data Sparsity},\n  author={Athavale, Vinayak and Bharadwaj, Shreenivas and Prabhu, Ameya and others},\n  booktitle={International Conference on Natural Language Processing (ICON)},\n  year={2016}\n}",
-    "image": "",
-    "links": [],
-    "abstract": "",
-    "rtai_tags": []
+    "id": "prabhu2018hybridbinary",
+    "title": "Hybrid Binary Networks: Optimizing for Accuracy, Efficiency and Memory",
+    "authors": [
+      "ameya_prabhu",
+      "vishal_batchu",
+      "rohit_gajawada",
+      "aurobindo_munagala",
+      "anoop_namboodiri"
+    ],
+    "venue": "WACV",
+    "year": "2018",
+    "url": "https://arxiv.org/abs/1804.03867",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/1804.03867" },
+      { "text": "Code", "url": "https://github.com/erilyth/HybridBinaryNetworks-WACV18" },
+      { "text": "Talk", "url": "https://www.youtube.com/watch?v=QhhRkewA2r0" },
+      { "text": "Slides", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/hybrid_binary_slides.pdf" },
+      { "text": "Poster", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/hybrid_binary_poster.pdf" }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "prabhu2018distributionaware",
+    "title": "Distribution-Aware Binarization of Neural Networks for Sketch Recognition",
+    "authors": [
+      "ameya_prabhu",
+      "vishal_batchu",
+      "aurobindo_munagala",
+      "rohit_gajawada",
+      "anoop_namboodiri"
+    ],
+    "venue": "WACV",
+    "year": "2018",
+    "url": "https://arxiv.org/abs/1804.02941",
+    "bibtex": "",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/1804.02941" },
+      { "text": "Code", "url": "https://github.com/erilyth/DistributionAwareBinarizedNetworks-WACV18" },
+      { "text": "Talk", "url": "https://www.youtube.com/watch?v=vbs8TL0GSa8" },
+      { "text": "Slides", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/distribution_aware_slides.pdf" },
+      { "text": "Poster", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/distribution_aware_poster.pdf" }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "ghosal2015clusteredsketch",
+    "title": "Learning clustered sub-spaces for sketch-based image retrieval",
+    "authors": [
+      "koustav_ghosal",
+      "ameya_prabhu",
+      "riddhiman_dasgupta",
+      "anoop_namboodiri"
+    ],
+    "venue": "ACPR",
+    "year": "2015",
+    "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/cluster_sketches.pdf",
+    "bibtex": "",
+    "links": [
+      { "text": "PDF", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/cluster_sketches.pdf" },
+      { "text": "Slides", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/master/documents/cluster_sketches_slides.pdf" }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "prabhu2020acm",
+    "title": "Online Continual Learning Without the Storage Constraint",
+    "authors": [
+      "ameya_prabhu",
+      "zhipeng_cai",
+      "puneet_dokania",
+      "philip_torr",
+      "vladlen_koltun",
+      "ozan_sener"
+    ],
+    "venue": "arXiv",
+    "year": "2023",
+    "url": "https://github.com/drimpossible/drimpossible.github.io/blob/41f547b991fc99d1f733df8ab8528aa552b74a1f/documents/ACM.pdf",
+    "bibtex": "",
+    "links": [
+      { "text": "PDF", "url": "https://github.com/drimpossible/drimpossible.github.io/blob/41f547b991fc99d1f733df8ab8528aa552b74a1f/documents/ACM.pdf" },
+      { "text": "Code", "url": "https://github.com/drimpossible/ACM" }
+    ],
+    "abstract": ""
   }
 ];
 
-module.exports = publicationsData;
+// Support both browser and Node (for tooling/tests)
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = publicationsData;
+}

@@ -5,49 +5,62 @@ async function renderPublication(publication) {
   const tagsHTML = tags.map(tag => 
     `<span style="background-color:${getTagColor(tag)}">${tag}</span>`
   ).join('\n');
-  
-
-  // Render RTAITags if they exist
-  let rtaiTagsHTML = '';
-  if (publication.rtai_tags) {
-    const rtaiTags = await Promise.all(publication.rtai_tags.map(tag => htmlCommunityTag(tag)));
-    rtaiTagsHTML = rtaiTags.join('\n');
-  }
 
   // Combine regular tags and RTAI tags
+  const allTagsHTML = tagsHTML;
 
-
-  const allTagsHTML = tagsHTML + (rtaiTagsHTML ? '\n' + rtaiTagsHTML : '');
-
-  // Create author lookup map if it doesn't exist
+  // Create author lookup maps if they don't exist
   if (!window.authorLookup) {
     window.authorLookup = new Map();
+    window.authorNameLookup = new Map();
     if (typeof authorsData !== 'undefined' && authorsData.authors) {
       authorsData.authors.forEach(author => {
         window.authorLookup.set(author.id, author);
+        window.authorNameLookup.set(author.name, author);
       });
     }
   }
   
   // Resolve author IDs to author objects
-  const authorsHTML = publication.authors.map(authorId => {
-    const author = window.authorLookup.get(authorId);
+  // Add support for co-first (*) and co-last (†) author markings via optional arrays on publication
+  const coFirst = Array.isArray(publication.coFirstAuthors) ? new Set(publication.coFirstAuthors) : new Set();
+  const coLast = Array.isArray(publication.coLastAuthors) ? new Set(publication.coLastAuthors) : new Set();
+
+  const hasMarker = (authorToken, set) => {
+    if (set.size === 0) return false;
+    if (set.has(authorToken)) return true;
+    const author = window.authorLookup.get(authorToken) || window.authorNameLookup.get(authorToken);
+    if (!author) return false;
+    return set.has(author.id) || set.has(author.name);
+  };
+
+  const authorsHTML = publication.authors.map(authorToken => {
+    // authorToken may be an author id (preferred) or a literal name in legacy entries
+    const author = window.authorLookup.get(authorToken) || window.authorNameLookup.get(authorToken);
+
+    const markers = `${hasMarker(authorToken, coFirst) ? '<sup>*</sup>' : ''}${hasMarker(authorToken, coLast) ? '<sup>†</sup>' : ''}`;
+
     if (!author) {
-      console.warn(`Author not found for ID: ${authorId}`);
-      return authorId; // fallback to showing the ID
+      console.warn(`Author not found for token: ${authorToken}`);
+      return authorToken + markers; // fallback to showing the token with markers if applicable
     }
-    
+
+    let nameHTML;
     if (author.isMe) {
-      return `<strong>${author.name}</strong>`;
+      nameHTML = `<strong>${author.name}</strong>`;
     } else if (author.url) {
-      return `<a href="${author.url}">${author.name}</a>`;
+      nameHTML = `<a href="${author.url}">${author.name}</a>`;
     } else {
-      return author.name;
+      nameHTML = author.name;
     }
+
+    return nameHTML + markers;
   }).join(',\n');
   
-  const linksHTML = publication.links.length > 0 ? 
-    publication.links.map(link => `<a href="${link.url}">${link.text}</a>`).join(' / ') : '';
+  // Safely handle links
+  const links = Array.isArray(publication.links) ? publication.links : [];
+  const linksHTML = links.length > 0 ? 
+    links.map(link => `<a href="${link.url}">${link.text}</a>`).join(' / ') : '';
   
   // Create a BibTeX toggle link (without the pre element)
   const bibtexId = `bibtex-${publication.id}`;
@@ -129,109 +142,6 @@ function selectAndCopyBibtex(event, id) {
   }
 }
 
-class SimpleHasher {
-  constructor() {
-    this._data = "";
-  }
-
-  update(data) {
-    if (typeof data !== "string") {
-      throw new TypeError("Only string input supported");
-    }
-    this._data += data;
-    return this;
-  }
-
-  digest() {
-    // manual SHA-256 fixed for this use case
-    const buffer = new TextEncoder().encode(this._data);
-    return crypto.subtle.digest("SHA-256", buffer)
-      .then(digest => {
-        const view = new DataView(digest);
-        // read first 6 bytes manually
-        const firstSix = (view.getUint8(0) * 2 ** 40) +
-                         (view.getUint8(1) * 2 ** 32) +
-                         (view.getUint8(2) * 2 ** 24) +
-                         (view.getUint8(3) * 2 ** 16) +
-                         (view.getUint8(4) * 2 ** 8) +
-                         (view.getUint8(5));
-        return firstSix;
-      });
-  }
-}
-
-function createHash(algorithm) {
-  if (algorithm !== "sha256") {
-    throw new Error("Only sha256 supported");
-  }
-  return new SimpleHasher();
-}
-
-async function hashAcronym(value) {
-  const hasher = createHash("sha256").update(value ?? "");
-  // digest() returns a Promise that resolves to a hex string
-  const digest = await hasher.digest();
-  
-  // Convert the first 12 characters of the hex digest to an integer
-  const hexDigest = digest.toString(16).padStart(12, '0');
-  return parseInt(hexDigest.slice(0, 12), 16);
-}
-
-async function hashColor(acronym) {
-  const value = await hashAcronym(acronym);
-  const hue = value % 360;
-  const saturation = 40 + (value % 40);
-  const lightness = 40 + (40 - (value % 40));
-  return hslToHex(hue, saturation, lightness);
-}
-
-function hslToHex(h, s, l) {
-  s /= 100;
-  l /= 100;
-
-  const c = (1 - Math.abs(2 * l - 1)) * s;
-  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
-  const m = l - c / 2;
-
-  let r = 0,
-    g = 0,
-    b = 0;
-
-  if (0 <= h && h < 60) {
-    [r, g, b] = [c, x, 0];
-  } else if (60 <= h && h < 120) {
-    [r, g, b] = [x, c, 0];
-  } else if (120 <= h && h < 180) {
-    [r, g, b] = [0, c, x];
-  } else if (180 <= h && h < 240) {
-    [r, g, b] = [0, x, c];
-  } else if (240 <= h && h < 300) {
-    [r, g, b] = [x, 0, c];
-  } else if (300 <= h && h < 360) {
-    [r, g, b] = [c, 0, x];
-  }
-
-  const toHex = (n) => {
-    const hex = Math.round((n + m) * 255).toString(16);
-    return hex.length === 1 ? "0" + hex : hex;
-  };
-
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
-}
-
-// async function getColor(category, level) {
-//   const baseHSL = await stringToHSL(category);
-//   return adjustLightness(baseHSL, level);
-// }
-
-async function htmlCommunityTag(acronym, putColor = true, additionalText = "") {
-  const color = putColor ? await hashColor(acronym) : '#CCCCCC';
-  return `<a href='https://researchtrend.ai/communities/${acronym}' style='text-decoration: none; color: white;'>
-    <span class='inline-flex items-center rounded-full font-medium text-medium' 
-    style='background-color: ${color}; color: var(--community-tag-text-color); padding: 1px 4px; border-radius: 12px; font-family: Mukta, sans-serif;'>
-    ${acronym}${additionalText}</span></a>`;
-}
-
 // Function to get color for tag
 function getTagColor(tag) {
   const tagColors = {
@@ -263,27 +173,9 @@ async function renderPublications() {
   // Using Promise.all correctly to await all async renderPublication calls
   const publicationsHTMLArray = await Promise.all(publications.map(pub => renderPublication(pub)));
   publicationsContainer.innerHTML = publicationsHTMLArray.join('\n');
-  
-  // Make the functions globally available
-  window.toggleBibtex = toggleBibtex;
-  window.selectAndCopyBibtex = selectAndCopyBibtex;
-  
-  // Filter publications based on selected communities if the filter function exists
-  if (typeof filterPublicationsByTags === 'function') {
-    filterPublicationsByTags();
-  }
 }
 
 // Initialize when the DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
   renderPublications();
-  
-  // Add theme change listener for charts
-  const toggleSwitch = document.querySelector('#checkbox');
-  if (toggleSwitch) {
-    toggleSwitch.addEventListener('change', updateChartTheme);
-  }
-  
-  // Listen for system preference changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateChartTheme);
-}); 
+});

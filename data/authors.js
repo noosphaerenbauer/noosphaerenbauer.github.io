@@ -38,15 +38,27 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "alexander_koepke",
+      "name": "A. Sophia Koepke",
+      "url": "https://akoepke.github.io/",
+      "isMe": false
+    },
+    {
       "id": "alexander_lyzhov",
       "name": "Alexander Lyzhov",
-      "url": "https://scholar.google.com/citations?user=5LXTi40AAAAJ&hl=en",
+      "url": "https://scholar.google.com/citations?user=5LXTi40AAAAJ",
+      "isMe": false
+    },
+    {
+      "id": "alexander_panfilov",
+      "name": "Alexander Panfilov",
+      "url": "https://kotekjedi.github.io/",
       "isMe": false
     },
     {
       "id": "alexander_rubinstein",
       "name": "Alexander Rubinstein",
-      "url": "https://scholar.google.com/citations?hl=en&user=upi0cDcAAAAJ",
+      "url": "https://scholar.google.com/citations?user=upi0cDcAAAAJ",
       "isMe": false
     },
     {
@@ -80,6 +92,12 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "alon_jacovi",
+      "name": "Alon Jacovi",
+      "url": "https://scholar.google.com/citations?user=cX9TtloAAAAJ",
+      "isMe": false
+    },
+    {
       "id": "amartya_sanyal",
       "name": "Amartya Sanyal",
       "url": "https://amartya18x.github.io/",
@@ -88,25 +106,25 @@ const authorsData = {
     {
       "id": "ameya_prabhu",
       "name": "Ameya Prabhu",
-      "url": "https://prabhu-ameya.github.io/",
+      "url": "https://scholar.google.com/citations?user=0kK7sSAAAAAJ",
       "isMe": true
     },
     {
       "id": "andreas_hochlehnert",
       "name": "Andreas Hochlehnert",
-      "url": "https://scholar.google.com/citations?user=tc8HH6MAAAAJ&hl=en",
+      "url": "https://scholar.google.com/citations?user=tc8HH6MAAAAJ",
       "isMe": false
     },
     {
       "id": "andrew_george_gritsevskiy",
       "name": "Andrew George Gritsevskiy",
-      "url": "https://scholar.google.com/citations?user=2x1_GzMAAAAJ&hl=en",
+      "url": "https://andrew.gr/",
       "isMe": false
     },
     {
       "id": "anoop_namboodiri",
       "name": "Anoop Namboodiri",
-      "url": "https://scholar.google.com/citations?user=mpI3sbYAAAAJ&hl=en",
+      "url": "https://scholar.google.com/citations?user=mpI3sbYAAAAJ",
       "isMe": false
     },
     {
@@ -134,9 +152,21 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "caglar_gulcehre",
+      "name": "Caglar Gulcehre",
+      "url": "https://www.caglarg.com/",
+      "isMe": false
+    },
+    {
       "id": "charles_dognin",
       "name": "Charles Dognin",
       "url": "https://www.linkedin.com/in/charlesdognin",
+      "isMe": false
+    },
+    {
+      "id": "christian_schroeder_de_witt",
+      "name": "Christian Schroeder de Witt",
+      "url": "https://schroederdewitt.com/",
       "isMe": false
     },
     {
@@ -158,6 +188,18 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "daniil_dzenhaliou",
+      "name": "Daniil Dzenhaliou",
+      "url": "https://scholar.google.com/citations?user=GJ3LvUgAAAAJ",
+      "isMe": false
+    },
+    {
+      "id": "daniil_zverev",
+      "name": "Daniil Zverev",
+      "url": "https://dzverev.com/",
+      "isMe": false
+    },
+    {
       "id": "david_krueger",
       "name": "David Krueger",
       "url": "https://www.davidscottkrueger.com/",
@@ -176,6 +218,18 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "elisa_nguyen",
+      "name": "Elisa Nguyen",
+      "url": "https://elisanguyen.github.io/",
+      "isMe": false
+    },
+    {
+      "id": "eneko_agirre",
+      "name": "Eneko Agirre",
+      "url": "http://ixa2.si.ehu.es/eneko/",
+      "isMe": false
+    },
+    {
       "id": "ethan_perez",
       "name": "Ethan Perez",
       "url": "https://ethanperez.net/",
@@ -185,6 +239,12 @@ const authorsData = {
       "id": "euan_mclean",
       "name": "Euan McLean",
       "url": "",
+      "isMe": false
+    },
+    {
+      "id": "evgenii_kortukov",
+      "name": "Evgenii Kortukov",
+      "url": "https://kortukov.github.io/",
       "isMe": false
     },
     {
@@ -242,15 +302,21 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "iker_garcia_ferrero",
+      "name": "Iker Garcia-Ferrero",
+      "url": "https://ikergarcia1996.github.io/",
+      "isMe": false
+    },
+    {
       "id": "ilze_auzina",
       "name": "Ilze Auzina",
       "url": "https://ilzeamandaa.github.io/",
       "isMe": false
     },
     {
-      "id": "jaicheng_liu",
-      "name": "Jiacheng Liu",
-      "url": "",
+      "id": "jackson_harmon",
+      "name": "Jackson Harmon",
+      "url": "https://github.com/shs2017/",
       "isMe": false
     },
     {
@@ -260,9 +326,21 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "jiacheng_liu",
+      "name": "Jiacheng Liu",
+      "url": "https://liujch1998.github.io/",
+      "isMe": false
+    },
+    {
       "id": "jianhao_yuan",
       "name": "Jianhao Yuan",
       "url": "",
+      "isMe": false
+    },
+    {
+      "id": "jiawei_li",
+      "name": "Jiawei Li",
+      "url": "https://dblp.org/pid/12/3242.html",
       "isMe": false
     },
     {
@@ -272,20 +350,26 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "jon_ander_campos",
+      "name": "Jon Ander Campos",
+      "url": "https://scholar.google.com/citations?user=wlcPPygAAAAJ",
+      "isMe": false
+    },
+    {
       "id": "jonas_geiping",
       "name": "Jonas Geiping",
       "url": "https://jonasgeiping.github.io/",
       "isMe": false
     },
     {
-      "id": "jose_hernandez_orallo",
-      "name": "Jose Hernandez Orallo",
+      "id": "joschka_struber",
+      "name": "Joschka Struber",
       "url": "",
       "isMe": false
     },
     {
-      "id": "joschka_struber",
-      "name": "Joschka Struber",
+      "id": "jose_hernandez_orallo",
+      "name": "Jose Hernandez Orallo",
       "url": "",
       "isMe": false
     },
@@ -305,6 +389,12 @@ const authorsData = {
       "id": "koustav_ghosal",
       "name": "Koustav Ghosal",
       "url": "https://www.linkedin.com/in/koustav-ghosal-65a24624?originalSubdomain=ie",
+      "isMe": false
+    },
+    {
+      "id": "kristina_nikolic",
+      "name": "Kristina Nikolic",
+      "url": "https://scholar.google.com/citations?user=aFpbzMYAAAAJ",
       "isMe": false
     },
     {
@@ -338,6 +428,12 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "maksym_andriushchenko",
+      "name": "Maksym Andriushchenko",
+      "url": "https://www.andriushchenko.me/",
+      "isMe": false
+    },
+    {
       "id": "maneesh_singh",
       "name": "Maneesh Singh",
       "url": "https://www.linkedin.com/in/maneesh-singh-3523ab9",
@@ -352,7 +448,7 @@ const authorsData = {
     {
       "id": "matthias_bethge",
       "name": "Matthias Bethge",
-      "url": "https://bethgelab.org/",
+      "url": "https://scholar.google.com/citations?user=0z0fNxUAAAAJ",
       "isMe": false
     },
     {
@@ -362,9 +458,33 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "mehdi_cherti",
+      "name": "Mehdi Cherti",
+      "url": "https://mehdidc.github.io/",
+      "isMe": false
+    },
+    {
       "id": "michael_pieler",
       "name": "Michael Pieler",
       "url": "",
+      "isMe": false
+    },
+    {
+      "id": "mikhail_terekhov",
+      "name": "Mikhail Terekhov",
+      "url": "https://scholar.google.com/citations?user=tk8l108AAAAJ",
+      "isMe": false
+    },
+    {
+      "id": "monik_pamecha",
+      "name": "Monik Pamecha",
+      "url": "https://dblp.org/pid/188/6429.html",
+      "isMe": false
+    },
+    {
+      "id": "mor_geva",
+      "name": "Mor Geva",
+      "url": "https://mega002.github.io/",
       "isMe": false
     },
     {
@@ -410,6 +530,18 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "oriol_vinyals",
+      "name": "Oriol Vinyals",
+      "url": "https://oriolvinyals.com/",
+      "isMe": false
+    },
+    {
+      "id": "oscar_sainz",
+      "name": "Oscar Sainz",
+      "url": "https://osainz59.github.io/",
+      "isMe": false
+    },
+    {
       "id": "ozan_sener",
       "name": "Ozan Sener",
       "url": "https://ozansener.net/",
@@ -422,6 +554,12 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "philipp_davydov",
+      "name": "Philipp Davydov",
+      "url": "https://dblp.org/pid/420/4055.html",
+      "isMe": false
+    },
+    {
       "id": "ponnurangam_kumaraguru",
       "name": "Ponnurangam Kumaraguru",
       "url": "https://www.linkedin.com/in/ponguru?originalSubdomain=in",
@@ -430,7 +568,7 @@ const authorsData = {
     {
       "id": "puneet_dokania",
       "name": "Puneet Dokania",
-      "url": "https://puneetkdokania.github.io/",
+      "url": "https://scholar.google.com/citations?user=WsM7ybkAAAAJ",
       "isMe": false
     },
     {
@@ -482,6 +620,24 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "sebastian_dziadzio",
+      "name": "Sebastian Dziadzio",
+      "url": "https://sebastiandziadzio.com/",
+      "isMe": false
+    },
+    {
+      "id": "sebastian_lapuschkin",
+      "name": "Sebastian Lapuschkin",
+      "url": "http://iphome.hhi.de/lapuschkin/",
+      "isMe": false
+    },
+    {
+      "id": "senthil_mani",
+      "name": "Senthil Mani",
+      "url": "https://dblp.org/pid/85/1789.html",
+      "isMe": false
+    },
+    {
       "id": "seong_joon_oh",
       "name": "Seong Joon Oh",
       "url": "https://coallaoh.github.io/",
@@ -514,7 +670,7 @@ const authorsData = {
     {
       "id": "shuyang_sun",
       "name": "Shuyang Sun",
-      "url": "https://scholar.google.com/citations?user=PoAvGRMAAAAJ&hl=en",
+      "url": "https://scholar.google.com/citations?user=PoAvGRMAAAAJ",
       "isMe": false
     },
     {
@@ -566,6 +722,12 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "srikanth_tamilselvam",
+      "name": "Srikanth Tamilselvam",
+      "url": "https://dblp.org/pid/138/3209.html",
+      "isMe": false
+    },
+    {
       "id": "stephen_casper",
       "name": "Stephen Casper",
       "url": "https://www.stephencasper.com/",
@@ -578,6 +740,18 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "surabhi_s_nath",
+      "name": "Surabhi S. Nath",
+      "url": "https://surabhisnath.github.io/",
+      "isMe": false
+    },
+    {
+      "id": "susanne_keller",
+      "name": "Susanne Keller",
+      "url": "https://bethgelab.org/people/",
+      "isMe": false
+    },
+    {
       "id": "tawsif_ahmed",
       "name": "Tawsif Ahmed",
       "url": "",
@@ -586,7 +760,13 @@ const authorsData = {
     {
       "id": "thaddaeus_wiedemer",
       "name": "Thaddaeus Wiedemer",
-      "url": "https://institute-tue.ellis.eu/en/people/671c1643-8ec4-4b4a-8b45-a090e0304288",
+      "url": "https://thwiedemer.com/",
+      "isMe": false
+    },
+    {
+      "id": "the_floating_droid",
+      "name": "The Floating Droid",
+      "url": "",
       "isMe": false
     },
     {
@@ -650,15 +830,33 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "wenjie_li",
+      "name": "Wenjie Li",
+      "url": "https://scholar.google.com/citations?user=05AhUcwAAAAJ",
+      "isMe": false
+    },
+    {
       "id": "wieland_brendel",
       "name": "Wieland Brendel",
       "url": "https://institute-tue.ellis.eu/en/people/wbrendel",
       "isMe": false
     },
     {
+      "id": "wojciech_samek",
+      "name": "Wojciech Samek",
+      "url": "https://iphome.hhi.de/samek/",
+      "isMe": false
+    },
+    {
       "id": "xudong_shen",
       "name": "Xudong Shen",
       "url": "",
+      "isMe": false
+    },
+    {
+      "id": "yanai_elazar",
+      "name": "Yanai Elazar",
+      "url": "https://yanaiela.github.io/",
       "isMe": false
     },
     {
@@ -686,6 +884,12 @@ const authorsData = {
       "isMe": false
     },
     {
+      "id": "zeynep_akata",
+      "name": "Zeynep Akata",
+      "url": "https://eml-unitue.de/people/zeynep-akata",
+      "isMe": false
+    },
+    {
       "id": "zhaochong_an",
       "name": "Zhaochong An",
       "url": "https://zhaochongan.github.io/",
@@ -698,15 +902,15 @@ const authorsData = {
       "isMe": false
     },
     {
-      "id": "zhongrui_gui",
-      "name": "Zhongrui Gui",
-      "url": "https://scholar.google.com/citations?user=HRnLy5wAAAAJ",
-      "isMe": false
-    },
-    {
       "id": "zhipeng_cai",
       "name": "Zhipeng Cai",
       "url": "",
+      "isMe": false
+    },
+    {
+      "id": "zhongrui_gui",
+      "name": "Zhongrui Gui",
+      "url": "https://scholar.google.com/citations?user=HRnLy5wAAAAJ",
       "isMe": false
     }
   ]

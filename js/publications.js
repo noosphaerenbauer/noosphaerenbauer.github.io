@@ -25,6 +25,8 @@ async function renderPublication(publication) {
   // Add support for co-first (*) and co-last (†) author markings via optional arrays on publication
   const coFirst = Array.isArray(publication.coFirstAuthors) ? new Set(publication.coFirstAuthors) : new Set();
   const coLast = Array.isArray(publication.coLastAuthors) ? new Set(publication.coLastAuthors) : new Set();
+  // New: core contributors (◦)
+  const coreContrib = Array.isArray(publication.coreContributors) ? new Set(publication.coreContributors) : new Set();
 
   const hasMarker = (authorToken, set) => {
     if (set.size === 0) return false;
@@ -38,7 +40,11 @@ async function renderPublication(publication) {
     // authorToken may be an author id (preferred) or a literal name in legacy entries
     const author = window.authorLookup.get(authorToken) || window.authorNameLookup.get(authorToken);
 
-    const markers = `${hasMarker(authorToken, coFirst) ? '<sup>*</sup>' : ''}${hasMarker(authorToken, coLast) ? '<sup>†</sup>' : ''}`;
+    const markers = [
+      hasMarker(authorToken, coFirst) ? '<sup class="author-marker cofirst" aria-label="Shared lead author" title="Shared lead author">*</sup>' : '',
+      hasMarker(authorToken, coLast) ? '<sup class="author-marker colast" aria-label="Shared advising" title="Shared advising">†</sup>' : '',
+      hasMarker(authorToken, coreContrib) ? '<sup class="author-marker core" aria-label="Core contributor" title="Core contributor">◦</sup>' : ''
+    ].join('');
 
     if (!author) {
       console.warn(`Author not found for token: ${authorToken}`);
@@ -62,14 +68,18 @@ async function renderPublication(publication) {
   const linksHTML = links.length > 0 ? 
     links.map(link => `<a href="${link.url}">${link.text}</a>`).join(' / ') : '';
   
-  // Create a BibTeX toggle link (without the pre element)
+  // Create a BibTeX toggle link (supports inline or lazy sources)
   const bibtexId = `bibtex-${publication.id}`;
-  const bibtexLinkHTML = publication.bibtex ? 
-    `<a href="javascript:void(0)" onclick="toggleBibtex('${bibtexId}')">BibTeX</a>` : '';
+  const hasInlineBibtex = Boolean(publication.bibtex && publication.bibtex.trim().length > 0);
+  const provider = deriveBibtexProvider(publication);
+  const hasAnyBibtex = hasInlineBibtex || Boolean(provider);
+  const bibtexLinkHTML = hasAnyBibtex ? 
+    `<a href="javascript:void(0)" onclick="loadAndShowBibtex('${bibtexId}', '${publication.id}')">BibTeX</a>` : '';
   
   // Create the BibTeX content pre element separately
-  const bibtexContentHTML = publication.bibtex ? 
-    `<pre id="${bibtexId}" class="bibtex-content" style="display:none" onclick="selectAndCopyBibtex(event, '${bibtexId}')">${publication.bibtex}</pre>` : '';
+  const initialContent = hasInlineBibtex ? publication.bibtex : '';
+  const bibtexContentHTML = hasAnyBibtex ? 
+    `<pre id="${bibtexId}" class="bibtex-content" style="display:none" onclick="selectAndCopyBibtex(event, '${bibtexId}')" data-loaded="${hasInlineBibtex ? 'true' : 'false'}">${initialContent}</pre>` : '';
   
   // Combine all links first (BibTeX link + other links)
   const combinedLinksHTML = bibtexLinkHTML + (linksHTML ? (bibtexLinkHTML ? ' / ' : '') + linksHTML : '');
@@ -179,3 +189,107 @@ async function renderPublications() {
 window.addEventListener('DOMContentLoaded', function() {
   renderPublications();
 });
+
+// Helper: derive a BibTeX provider for a publication, preferring conferences/journals
+function deriveBibtexProvider(publication) {
+  const allUrls = [];
+  if (publication.url) allUrls.push(publication.url);
+  if (Array.isArray(publication.links)) {
+    publication.links.forEach(l => { if (l && l.url) allUrls.push(l.url); });
+  }
+
+  // ACL Anthology direct .bib
+  const acl = allUrls.find(u => /aclanthology\.org\//i.test(u));
+  if (acl) {
+    let bibUrl = acl.replace(/\/?$/, ''); // trim trailing slash
+    if (!/\.bib$/i.test(bibUrl)) bibUrl = bibUrl + '.bib';
+    return { type: 'directUrl', url: bibUrl, source: 'ACL' };
+  }
+
+  // CVF OpenAccess (ECCV/CVPR) – parse HTML and extract first <pre> with '@'
+  const cvf = allUrls.find(u => /openaccess\.thecvf\.com/i.test(u));
+  if (cvf) {
+    return { type: 'htmlPre', url: cvf, source: 'CVF' };
+  }
+
+  // PMLR (CoLLAs, ICML workshops, etc.)
+  const pmlr = allUrls.find(u => /proceedings\.mlr\.press\//i.test(u));
+  if (pmlr) {
+    return { type: 'htmlPre', url: pmlr, source: 'PMLR' };
+  }
+
+  // arXiv – derive bibtex endpoint from arXiv abs URL
+  const arxivAbs = allUrls.find(u => /arxiv\.org\/abs\//i.test(u));
+  if (arxivAbs) {
+    const m = arxivAbs.match(/arxiv\.org\/abs\/([0-9]{4}\.[0-9]{4,5})(?:v\d+)?/i);
+    if (m) {
+      const bibUrl = `https://arxiv.org/bibtex/${m[1]}`;
+      return { type: 'directUrl', url: bibUrl, source: 'arXiv' };
+    }
+  }
+
+  return null;
+}
+
+// Helper: fetch BibTeX content given a provider
+async function fetchBibtexFromProvider(provider) {
+  try {
+    const resp = await fetch(provider.url, { headers: { 'Accept': 'text/html, text/plain' } });
+    const text = await resp.text();
+
+    if (provider.type === 'directUrl') {
+      return text.trim();
+    }
+
+    if (provider.type === 'htmlPre') {
+      // Extract first <pre> block that looks like BibTeX
+      const preMatch = text.match(/<pre[^>]*>([\s\S]*?)<\/pre>/i);
+      if (preMatch) {
+        const content = preMatch[1]
+          .replace(/<br\s*\/?>(\n)?/gi, '\n') // convert line breaks
+          .replace(/<[^>]+>/g, '') // strip tags
+          .trim();
+        // If multiple PREs exist, this grabs the first; acceptable for CVF/PMLR pages
+        return content;
+      }
+    }
+  } catch (e) {
+    console.warn('Failed to fetch BibTeX from provider', provider, e);
+  }
+  return '';
+}
+
+// Lazy loader to toggle and, if necessary, fetch BibTeX
+async function loadAndShowBibtex(bibtexId, publicationId) {
+  const pre = document.getElementById(bibtexId);
+  if (!pre) return;
+
+  if (pre.dataset.loaded !== 'true') {
+    // Try to find publication in global data by id
+    const pub = (typeof publicationsData !== 'undefined') ? publicationsData.find(p => p.id === publicationId) : null;
+    let content = '';
+    if (pub && pub.bibtex && pub.bibtex.trim().length > 0) {
+      content = pub.bibtex.trim();
+    } else if (pub) {
+      const provider = deriveBibtexProvider(pub);
+      if (provider) {
+        pre.textContent = 'Loading BibTeX...';
+        content = await fetchBibtexFromProvider(provider);
+      }
+    }
+    if (content) {
+      pre.textContent = content;
+      pre.dataset.loaded = 'true';
+    } else {
+      pre.textContent = 'BibTeX unavailable';
+      pre.dataset.loaded = 'true';
+    }
+  }
+
+  // Toggle visibility
+  if (pre.style.display === 'none') {
+    pre.style.display = 'block';
+  } else {
+    pre.style.display = 'none';
+  }
+}

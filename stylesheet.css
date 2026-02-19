@@ -245,8 +245,8 @@ span.highlight {
 }
 
 .section-heading-rows {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 6px; /* was 10px */
+  margin-bottom: 4px; /* tighter to the list */
 }
 
 /* BibTeX styling */
@@ -398,4 +398,30 @@ input:checked + .slider:before {
   font-size: 12px;
   margin: 0 8px;
   color: var(--text-color);
+}
+
+/* Author markers styling */
+.author-marker {
+  font-size: 0.9em; /* base marker size */
+  line-height: 1;
+  margin-left: 1px;
+}
+.author-marker.cofirst { /* * should be 10% larger than surrounding text */
+  font-size: 1.1em;
+  position: relative;
+  top: 0.05em; /* slightly higher than before */
+}
+.author-marker.colast {
+  opacity: 0.9;
+}
+.author-marker.core {
+  opacity: 0.9;
+}
+
+#author-marker-legend {
+  margin-top: 0; /* inline with heading */
+  margin-bottom: 0;
+}
+#author-marker-legend .legend-item {
+  margin-right: 12px; /* a bit more spacing between items */
 }

@@ -1,73 +1,100 @@
-# Seong Joon Oh's Personal Website
+# Personal Academic Website Template
 
-## Managing Publications
+A lightweight personal website for researchers with:
+- a homepage (`index.html`)
+- a dedicated publications page (`publications.html`)
+- publication data separated from layout (`data/*.js`)
+- two publication views: **By Date** and **By Topic**
+- light/dark theme toggle
 
-Publications are now managed through a separate data file (`data/publications.js`) rather than directly editing HTML.
+No build step is required.
 
-### How to Add a New Publication
+## Quick Start
 
-1. Add the new publication entry to the `publicationsData` array in `data/publications.js`. You can:
-   - Manually add a new entry in the JSON format
-   - Use the helper script to generate the JSON format: `python3 scripts/convert_to_json.py > new_publication.json`
-   - Then copy the output and add it to the array in `data/publications.js`
+1. Fork this repo.
+2. Update profile content in `index.html`.
+3. Update publication and author data in `data/publications.js` and `data/authors.js`.
+4. Update domain settings:
+   - edit/remove `CNAME`
+   - update canonical/OpenGraph URLs in `index.html` and `publications.html`
+5. Deploy with GitHub Pages (or any static host).
 
-2. Add any associated files:
-   - Publication image in `pictures/` (typically named `authorlastname_year_venue.png`)
+## Project Structure
 
-3. The website will automatically load and display the publications when refreshed.
+- `index.html`: homepage (bio, links, logos)
+- `publications.html`: publications page shell + view toggle UI
+- `data/authors.js`: author registry (id, name, url, isMe)
+- `data/publications.js`: publication records
+- `js/publications.js`: rendering, date sorting, topic grouping, BibTeX loading
+- `stylesheet.css`: shared styles
+- `pictures/`: site images/logos
 
-### Publication JSON Format
+## Local Preview
 
-Each publication entry should follow this format:
+```bash
+python3 -m http.server 8000
+```
 
-```json
+Then open `http://localhost:8000`.
+
+## Editing Publications
+
+### 1) Add/Update Authors
+Add authors in `data/authors.js`:
+
+```js
 {
-  "id": "uniqueid",
-  "title": "Publication Title",
-  "authors": [
-    {"name": "Author Name", "url": "https://author-website.com", "isMe": false},
-    {"name": "Seong Joon Oh", "url": "", "isMe": true}
-  ],
-  "venue": "Conference or Journal Name",
-  "year": "2025",
-  "url": "https://arxiv.org/abs/paper-url",
-  "bibtex": `@inproceedings{uniqueid,
-    title = {Publication Title},
-    author = {Author, Name and Oh, Seong Joon},
-    year = {2025},
-    booktitle = {Conference Name},
-  }`,
-  "image": "pictures/paper-image.png",
-  "links": [
-    {"text": "Code", "url": "https://github.com/username/repo"},
-    {"text": "Project", "url": "https://project-website.com"}
-  ],
-  "abstract": "Paper abstract goes here...",
-  "tags": ["Tag1", "Tag2"]
+  "id": "jane_doe",
+  "name": "Jane Doe",
+  "url": "https://janedoe.github.io/",
+  "isMe": false
 }
 ```
 
-### BibTeX Format
+Use stable IDs; publications should reference these IDs.
 
-The BibTeX content is now embedded directly in the publication data. Use backticks (`) to define a multi-line string in JavaScript:
+### 2) Add a Publication
+Add an entry to `data/publications.js` (JS object, not strict JSON):
 
-```javascript
-"bibtex": `@inproceedings{uniqueid,
-  title = {Publication Title},
-  author = {Author, Name and Oh, Seong Joon},
-  year = {2025},
-  booktitle = {Conference Name},
-}`
+```js
+{
+  "id": "doe2026example",
+  "title": "Example Paper",
+  "authors": ["jane_doe", "ameya_prabhu"],
+  "venue": "ICML",
+  "year": "2026",
+  "url": "https://arxiv.org/abs/2601.12345",
+  "bibtex": "",
+  "links": [
+    { "text": "arXiv", "url": "https://arxiv.org/abs/2601.12345" }
+  ],
+  "abstract": "",
+  "tags": ["Evaluation"]
+}
 ```
 
-### Tag Colors
+Optional fields used by renderer:
+- `coFirstAuthors`
+- `coLastAuthors`
+- `coreContributors`
 
-The following colors are used for tags:
-- Privacy & Security: #b5ead7
-- Evaluation: #e2c7e5
-- Robustness: #ff9aa2
-- Uncertainty: #ffdac1
-- Explainability: #c7ceea
-- Large-Scale ML: #C9D3D8
+## Topic View Configuration
 
-Edit the `getTagColor` function in `js/publications.js` to add or modify tag colors. 
+The **By Topic** view is controlled in `js/publications.js`:
+- `TOPIC_DEFINITIONS`: topic names + short goals
+- `TOPIC_OVERRIDES`: explicit paper-to-topic mapping (recommended)
+- `TOPIC_KEYWORDS`: fallback keyword-based assignment
+
+If a paper is uncategorized, it falls back to `other`.
+
+## Date Ordering
+
+The **By Date** view sorts latest → earliest using:
+1. arXiv ID month/year when available (`YYMM.xxxxx`)
+2. otherwise the `year` field
+
+## Notes for Reusers
+
+- Keep author links as personal websites when possible, then Scholar (`https://scholar.google.com/citations?user=...`).
+- Update social links/icons in `index.html`.
+- If you change your repository/domain, also update metadata URLs and `CNAME`.

@@ -46,7 +46,6 @@ const TOPIC_DEFINITIONS = [
 const TOPIC_OVERRIDES = {
   chandak2025openended: ['forecasting'],
   shashwat2025oversight: ['scaling-rl'],
-  struber2025beliefupdates: ['scaling-rl'],
   chandak2025answermatch: ['scaling-rl'],
 
   condareport2024: ['data-curation'],
@@ -65,7 +64,6 @@ const TOPIC_OVERRIDES = {
   prabhu2023budgeted: ['continual-learning'],
   ghunaim2023realtime: ['continual-learning'],
   rubinstein2025ocl: ['continual-learning'],
-  rubinstein2025slotstomasks: ['continual-learning'],
   prabhu2023noc: ['continual-learning'],
   hammoud2023rapidadaptation: ['continual-learning'],
   prabhu2023acm: ['continual-learning'],

@@ -185,7 +185,7 @@ span.highlight {
 }
 
 .institute-logo{
-  width: 90px;
+  width: 115px;
 }
 
 .paper-images{
@@ -211,6 +211,10 @@ span.highlight {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .institute-logo {
+    width: 102px;
   }
 }
 
@@ -273,6 +277,44 @@ span.highlight {
 .publication-view-button.is-active {
   background: var(--link-color);
   color: #ffffff;
+}
+
+.publication-home-link {
+  align-items: center;
+  background-color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  color: #ffffff !important;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 0.35rem;
+  padding: 0.36rem 0.72rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.publication-home-link i {
+  font-size: 0.95rem;
+}
+
+.publication-home-link:hover,
+.publication-home-link:focus {
+  background-color: #ffffff;
+  border-color: var(--link-hover-color);
+  color: var(--link-hover-color) !important;
+  text-decoration: none;
+}
+
+.publication-home-link:focus {
+  outline: 2px solid color-mix(in srgb, var(--link-hover-color) 40%, transparent);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .publication-home-link:hover,
+[data-theme="dark"] .publication-home-link:focus {
+  background-color: #ffffff;
+  border-color: var(--link-hover-color);
+  color: var(--link-hover-color) !important;
 }
 
 .topic-grid {

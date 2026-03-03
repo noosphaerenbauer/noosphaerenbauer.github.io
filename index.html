@@ -91,36 +91,58 @@
         </div>
       </div>
       <div class="row common-rows align-items-start">
-        <div class="col-12 col-sm-4 order-sm-2 personal-column image-column">
-          <img alt="Photo of Ameya" src="pictures/photo.png" class="personal-photo">
-        </div>
-        <div class="col-12 col-sm-8 order-sm-1 personal-column">
-            <p>I am a postdoctoral researcher at the <a href="https://bethgelab.org/people/" target="_blank" rel="noopener noreferrer">Bethge Lab</a> at the Tübingen AI Center. My goal is automated scientific discovery, with a focus on:</p>
-            <ol class="my-0" style="margin-left:0; padding-left:0; list-style-position: inside;">
-              <li>Scaling supervision with RL to reduce reliance on manual labeling</li>
-              <li>Data‑centric Research: Curating data for pretraining & post‑training (also scalable RL environments)</li>
-              <li>Science of benchmarking: Building scalable benchmarks and analyzing current evaluations to better measure progress.</li>
-            </ol>
+        <div class="col-12 col-sm-5 order-sm-2 personal-column image-column">
+          <div class="image-stack">
+            <img alt="Photo of Ameya" src="pictures/photo.png" class="personal-photo">
             <div class="social-icons">
-              <a href="https://scholar.google.com/citations?user=0kK7sSAAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar-square"></i></a>
-              <a href="https://hypothesishacker.substack.com" aria-label="Substack" target="_blank" rel="noopener noreferrer"><i class="bi bi-substack"></i></a>
-              <a href="https://www.linkedin.com/in/ameya-prabhu/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/AmyPrb/" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-              <a href="https://github.com/noosphaerenbauer/" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="pictures/CV.pdf" aria-label="CV" target="_blank" rel="noopener noreferrer"><i class="ai ai-cv"></i></a>
-              <a href="mailto:ameya.prabhu@bethgelab.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://scholar.google.com/citations?user=0kK7sSAAAAAJ&hl=en" class="social-link-item" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+                <i class="ai ai-google-scholar-square"></i>
+                <span class="social-link-title">Google Scholar</span>
+              </a>
+              <a href="https://hypothesishacker.substack.com" class="social-link-item" aria-label="Substack" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-substack"></i>
+                <span class="social-link-title">Substack</span>
+              </a>
+              <a href="https://www.linkedin.com/in/ameya-prabhu/" class="social-link-item" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                <span class="social-link-title">LinkedIn</span>
+              </a>
+              <a href="https://twitter.com/AmyPrb/" class="social-link-item" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+                <span class="social-link-title">X / Twitter</span>
+              </a>
+              <a href="data/CV.pdf" class="social-link-item" aria-label="CV" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-lines"></i>
+                <span class="social-link-title">CV</span>
+              </a>
+              <a href="mailto:ameya.prabhu@bethgelab.org" class="social-link-item" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                <span class="social-link-title">Email</span>
+              </a>
+              <a href="publications.html" class="social-link-item social-link-item-final" aria-label="View full publications">
+                <i class="fas fa-book-open"></i>
+                <span class="social-link-title">Full publications</span>
+              </a>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="row common-rows">
-        <div class="col-12 text-center">
-          <p class="mb-0"><a href="publications.html"><strong>View full publications list</strong></a></p>
+        <div class="col-12 col-sm-7 order-sm-1 personal-column bio-column">
+            <div class="bio-block">
+            <p>I am a postdoctoral researcher at the <a href="https://www.bethgelab.org/" target="_blank" rel="noopener noreferrer">Bethge Lab</a> (<a href="https://tue.ai/" target="_blank" rel="noopener noreferrer">Tübingen AI Center</a>). My research is focused on advancing:</p>
+            <ol class="my-0 research-focus-list">
+              <li><strong>Metacognitive Continual Learning:</strong> Developing agents with stateful inference that can reflect on their own reasoning. My focus is on: (i) building systems that monitor their internal reasoning process to identify stagnation, backtrack, and self-correct; and (ii) designing memory mechanisms that learn from past mistakes without catastrophic forgetting.</li>
+              <li><strong>Post-Training for Self-Improvement:</strong> While pretraining crystallizes existing knowledge, I hypothesize that post-training can be a general method for discovering new knowledge. I want to design better long-horizon RL trajectories as a principled, scalable approach to online data curation even in superhuman settings. My focus is on: (i) dense reward structures, (ii) intrinsic motivation by forecasting consequences of exploration, and (iii) .</li>
+              <li><strong>Long-Horizon Reasoning:</strong> I conceptually structure discovery of new things broadly needing (i) hierarchy and (ii) planning. Inspired by the DSPy philosophy, I want to automatically engineer scaffolds that: (i) hierarchical delegation to subagents, (ii) select best next steps by dense rewards, enabling on-the-fly planning guided by metacognition to enable effective exploration of massive search spaces.</li>
+              <li><strong>The Science of Benchmarking:</strong> We need to rethink benchmarks from being mere leaderboards to providing actionable diagnostics for model developers. By utilizing sample-wise evaluation and clustering failures, we can pinpoint actionable areas for improvement where: (i) your model fails, (ii) competitor models succeed. This provides diagnostics for identifying gaps in real-world capabilities and provides fine-grained measurements of capability progression and regression.</li>
+              <li><strong>LM-Agent-driven Forecasting:</strong> Can AI translate vague research intuitions into concrete, verifiable predictions about things we haven't discovered yet? I aim to post-train LLMs to weigh conflicting evidence in literature under high uncertainty to develop principled ways of forecasting the most viable paths for future scientific breakthroughs (or generally larger goals).</li>
+            </ol>
+            </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-            <div class="collaboration-box">
-              <p>If you're a PhD student interested in collaborating or just want to chat, please <a href="#">fill this form</a>!</p>
+          <div class="collaboration-box">
+              <p>I'm currently on the job market; please contact me at <a href="mailto:ameya.prabhu@bethgelab.org">ameya.prabhu@bethgelab.org</a>.</p>
             </div>
 
             <div class="mt-3 mb-3">
@@ -156,26 +178,129 @@
       }
 
       .social-icons {
-        text-align: center;
         margin-top: 1rem;
+        margin-bottom: 0.15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        width: min(100%, 320px);
+      }
+      .social-link-item {
+        display: grid;
+        grid-template-columns: 1.5rem 1fr;
+        column-gap: 0.45rem;
+        align-items: start;
+        color: var(--social-icon-color);
+        text-decoration: none;
+        font-size: 0.95rem;
+        line-height: 1.15;
+        padding: 0.25rem 0.42rem;
+        border-radius: 0.45rem;
+        transition: color 0.3s;
+        border: 1px solid rgba(0,0,0,0.06);
+      }
+      [data-theme="dark"] .social-link-item {
+        border-color: rgba(255,255,255,0.06);
+      }
+      .social-link-item i {
+        font-size: 1.35rem;
+        line-height: 1.2;
+        text-align: center;
+      }
+      .social-link-title {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+      .social-link-item:hover {
+        color: var(--social-icon-hover-color);
+        background: color-mix(in srgb, var(--social-icon-color) 11%, transparent);
+      }
+      .social-link-item-final {
+        background: color-mix(in srgb, var(--social-icon-color) 14%, transparent);
+        border-color: color-mix(in srgb, var(--social-icon-color) 30%, transparent);
+        font-weight: 600;
+      }
+      .social-link-item-final:hover {
+        background: color-mix(in srgb, var(--social-icon-hover-color) 20%, transparent);
+      }
+      .image-column,
+      .bio-column {
+        max-width: 100%;
+      }
+      @media (min-width: 576px) {
+        .image-column {
+          flex: 0 0 45%;
+          max-width: 45%;
+        }
+        .bio-column {
+          flex: 0 0 55%;
+          max-width: 55%;
+        }
+      }
+      @media (min-width: 768px) {
+        .image-column {
+          flex: 0 0 34%;
+          max-width: 34%;
+        }
+        .bio-column {
+          flex: 0 0 66%;
+          max-width: 66%;
+        }
+      }
+      .bio-block {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .bio-block p {
         margin-bottom: 0;
       }
-      .social-icons a {
-        color: var(--social-icon-color);
-        font-size: 2.025rem;
-        margin: 0 0.5rem;
-        transition: color 0.3s;
+      .research-focus-list {
+        margin: 0.35rem 0 0;
+        padding-left: 1.4rem;
+        line-height: 1.35;
+        gap: 0.45rem;
+        display: grid;
       }
-      .social-icons a:hover {
-        color: var(--social-icon-hover-color);
+      .research-focus-list li {
+        padding: 0.05rem 0;
+        margin: 0;
+        max-width: none;
+      }
+      .research-focus-list li strong {
+        color: #0b5ed7;
+      }
+      [data-theme="dark"] .research-focus-list li strong {
+        color: #8ec5ff;
+      }
+      @media (max-width: 767px) {
+        .bio-block {
+          gap: 0.4rem;
+        }
+        .research-focus-list {
+          max-width: 100%;
+          margin-top: 0.25rem;
+          gap: 0.3rem;
+          padding-left: 1.15rem;
+        }
+        .research-focus-list li {
+          max-width: 100%;
+        }
       }
       .tagline {
-        font-size: 0.9em;
+        font-size: clamp(0.76rem, 2.5vw, 1.02em);
+        white-space: nowrap;
+      }
+      .image-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .personal-photo {
         margin-top: 2rem;
         width: 100%;
-        max-width: 260px; /* was 162px: increase size on small screens */
+        max-width: 340px;
         display: block;
         margin-left: auto;
         margin-right: auto;
